@@ -24,18 +24,19 @@ public class Enemy1MovementAI : MonoBehaviour {
 
     void move() // somewhat random movement for enemy
     {
-        int rando = Random.Range(0, 14);
-        if (rando >= 12) 
+        int rando = Random.Range(0, 15);
+        if (rando >= 12 && rando < 15)
         {
             float angle = Mathf.Atan2(Player.transform.position.y - transform.position.y, Player.transform.position.x - transform.position.x);
             rb.velocity = new Vector2(Mathf.Cos(angle) * movementSpeed, Mathf.Sin(angle) * movementSpeed);
         }
-        else   
+        else if (rando < 11)
         {
             float rads = Mathf.Deg2Rad * rando * 30;
             rb.velocity = new Vector2(Mathf.Cos(rads) * movementSpeed, Mathf.Sin(rads) * movementSpeed);
         }
-        
+        else if (rando == 15)
+            rb.velocity = new Vector2(0, 0);        
 
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,7 +47,7 @@ public class Enemy1MovementAI : MonoBehaviour {
         }
         if (other.tag == "Wall")
         {
-            Debug.Log("hit a wall!");
+            
             // time to make the player move away from the wall?
             if (other.transform.position.x < transform.position.x)
             {
