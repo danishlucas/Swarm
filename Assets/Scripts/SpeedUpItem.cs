@@ -11,11 +11,11 @@ public class SpeedUpItem : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.tag == "Player")
         {
             Destroy(gameObject);
             PlayerController script = Player.GetComponent<PlayerController>();
-            script.maxSpeed += 4;
+            script.moveForce += .5f;
         }
     }
 	

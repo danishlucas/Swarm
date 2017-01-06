@@ -11,7 +11,10 @@ namespace UnityStandardAssets._2D
             if (other.tag == "Player")
             {
                 var player = GameObject.FindWithTag("Player");
-               // player.GetComponent(OtherScript) // use this to make the player take damage later
+                Attributes stats = player.GetComponent<Attributes>();
+                stats.takeDamage();
+
+
                 Destroy(gameObject);
             }
             if (other.tag == "Wall")

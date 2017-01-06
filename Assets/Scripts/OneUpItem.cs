@@ -13,9 +13,8 @@ public class OneUpItem : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            Attributes script = Player.GetComponent<Attributes>();
-            script.health += 1;
-            Player.gameObject.transform.localScale += new Vector3(.02f, .02f, 0);
+            Player.GetComponent<Attributes>().heal(); // hey me! this dont work! fixala!
+           
         }
 
     }
