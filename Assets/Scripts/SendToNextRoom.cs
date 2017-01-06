@@ -22,7 +22,7 @@ public class SendToNextRoom : MonoBehaviour
             if (dir == 1)
             {
                 Debug.Log("Norf");
-                other.transform.Translate(0, 5, 0);
+                other.transform.Translate(0, 6f, 0);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(0, 11, 0);
             }
@@ -43,7 +43,7 @@ public class SendToNextRoom : MonoBehaviour
             if (dir == 4)
             {
                 Debug.Log("real west side");
-                other.transform.Translate(-4.5f, 0, 0);
+                other.transform.Translate(-6, 0, 0);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(-16, 0, 0);
             }
