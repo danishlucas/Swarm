@@ -24,6 +24,11 @@ public class PlayerController : MonoBehaviour
 
 
     }
+    public void adjustMoveForce(float change)
+    {
+        Debug.Log("bing bong speed change!");
+        moveForce += change;
+    }
 
 
 }

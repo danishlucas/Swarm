@@ -32,7 +32,6 @@ public class OmniTurretAI : MonoBehaviour
             {
                 GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
                 Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
-                Debug.Log("Shiiiit we goin stet");
             if (i == 0)
                 rb2.velocity = new Vector2(shotSpeed, 0);
             else if (i == 1)
@@ -53,7 +52,6 @@ public class OmniTurretAI : MonoBehaviour
                 GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
                 Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
                
-                Debug.Log("ANGULAR MOMENTUM!!!!");
                 if (i == 0)
                     rb2.velocity = new Vector2(Mathf.Sin(45) * shotSpeed, Mathf.Cos(45) * shotSpeed); // fix the rest, use this template
                 else if (i == 1)

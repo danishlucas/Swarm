@@ -13,8 +13,6 @@ namespace UnityStandardAssets._2D
                 var player = GameObject.FindWithTag("Player");
                 Attributes stats = player.GetComponent<Attributes>();
                 stats.takeDamage();
-
-
                 Destroy(gameObject);
             }
             if (other.tag == "Wall")

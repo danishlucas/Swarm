@@ -5,17 +5,20 @@ public class Attributes : MonoBehaviour {
 
     public int health;
     public float speed;
-    public float size;
     public int maxHealth;
+    GameObject Player;
 
 
 	// Use this for initialization
 	void Start () {
+        Player = GameObject.Find("Player");
         health = 6;
         maxHealth = 6;
-        size = 1.0f;
         speed = 1;
-	}
+        
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,18 +27,28 @@ public class Attributes : MonoBehaviour {
     // called when player takes damage
     public void takeDamage()
     {
-        health--;
-        transform.localScale -= new Vector3(.03f, .03f, 0);
+        if (health != 0)
+        {
+            health--;
+            transform.localScale -= new Vector3(.02f, .02f, 0);
+            Debug.Log("Damaged! health = " + health);
+            if (health <= 0)
+            {
+                Debug.Log("Alas! I am slain!");
+            }
+
+            this.GetComponent<PlayerController>().moveForce += .5f;
+        }
+
     }
 
     public void heal()
     {
+        if (health < maxHealth)
         health++;
-        transform.localScale += new Vector3 (.03f, .03f, 0);
+        transform.localScale += new Vector3 (.02f, .02f, 0);
+        Debug.Log("healed! health =" + health);
+        this.GetComponent<PlayerController>().moveForce -= .5f;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        
-    }
 }

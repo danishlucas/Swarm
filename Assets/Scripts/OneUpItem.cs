@@ -13,7 +13,8 @@ public class OneUpItem : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            Player.GetComponent<Attributes>().heal(); // hey me! this dont work! fixala!
+            Attributes stats = other.GetComponent<Attributes>(); 
+            stats.heal();
            
         }
 
