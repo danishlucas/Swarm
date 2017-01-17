@@ -12,6 +12,7 @@ public class Enemy1MovementAI : MonoBehaviour {
 
     void Start () {
         InvokeRepeating("move", movementDelay, movementPause);
+        InvokeRepeating("rotatoPotato", 0, .05f);
         rb = GetComponent<Rigidbody2D>();
         Player = GameObject.FindWithTag("Player");
     }
@@ -19,8 +20,10 @@ public class Enemy1MovementAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        
+
+
+    }
 
     void move() // somewhat random movement for enemy
     {
@@ -39,6 +42,13 @@ public class Enemy1MovementAI : MonoBehaviour {
             rb.velocity = new Vector2(0, 0);        
 
     }
+
+    void rotatoPotato()
+    {
+        transform.LookAt(Player.transform.position);
+        transform.Rotate(new Vector3(0, -90, -90), Space.Self);//correcting the original rotation
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")

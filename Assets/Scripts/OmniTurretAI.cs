@@ -9,7 +9,6 @@ public class OmniTurretAI : MonoBehaviour
     public float shotDelay;
     public float repeatRate;
     public float shotSpeed;
-    public Renderer playerRend;
     private bool nesw; // north east south west OR NAH
 
     void Start()

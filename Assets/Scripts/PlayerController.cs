@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public int deltaTime2;
     public bool isDashing;
     public bool buttonAvailable = true;
+
     // Use this for initialization
     void Start()
     {
@@ -47,18 +48,12 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        Debug.Log(deltaTime1);
-        Debug.Log(isDashing);
+      //  Debug.Log(deltaTime1);
+       // Debug.Log(isDashing);
 
         myBody.velocity = (moveVec * (isDashing ? dashForce : 1));
         //myBody.velocity = (moveVec * dashForce);
 
 
     }
-    public void adjustMoveForce(float change)
-    {
-        Debug.Log("bing bong speed change!");
-        moveForce += change;
-    }
-
 }
