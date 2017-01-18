@@ -20,9 +20,16 @@ public class KillWhenTouched : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            EnemyCounter script = room.GetComponent<EnemyCounter>();
-            script.enemyCount -= 1;
+            if (other.GetComponent<PlayerController>().isDashing == true)
+            {
+                Destroy(gameObject);
+                EnemyCounter script = room.GetComponent<EnemyCounter>();
+                script.enemyCount -= 1;
+            }
+            else
+            {
+                other.GetComponent<Attributes>().takeDamage(); // test this shit then we can push!!!!
+            }
         }
     }
 }
