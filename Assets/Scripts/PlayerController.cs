@@ -22,11 +22,12 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 moveVec = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
         bool isBoosting = CrossPlatformInputManager.GetButton("Dash");
+        bool keyboardDash = Input.GetButtonDown("KeyboardDashButton");
         if (deltaTime1 == 0)
         {
             buttonAvailable = true;
         }
-        if (isBoosting == true && buttonAvailable == true)
+        if ((isBoosting || keyboardDash) && buttonAvailable)
         {
             deltaTime1 += 1;
         }
@@ -47,10 +48,6 @@ public class PlayerController : MonoBehaviour
             deltaTime1 = 0;
 
         }
-
-      //  Debug.Log(deltaTime1);
-       // Debug.Log(isDashing);
-
         myBody.velocity = (moveVec * (isDashing ? dashForce : 1));
         //myBody.velocity = (moveVec * dashForce);
 
