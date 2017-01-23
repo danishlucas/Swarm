@@ -32,9 +32,11 @@ public class PlayerController : MonoBehaviour
         float xPos = joystick.GetComponent<RectTransform>().anchoredPosition.x;
         float yPos = joystick.GetComponent<RectTransform>().anchoredPosition.y;
 
-        float xRotation = (float)(Math.Atan2(xPos, yPos));
-        Vector3 rotation = new Vector3(0,0 , xRotation);
-        transform.Rotate(rotation);
+        float xRotation = (float)(Math.Atan2(xPos, yPos)*(180/3.1415)*-1);
+        Debug.Log(xRotation);
+        //Vector3 rotation = new Vector3(0,0 , xRotation);
+        transform.localEulerAngles = new Vector3(0, 0, xRotation);
+        //transform.Rotate(rotation);
 
 
         Vector2 moveVec = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical")) * moveForce;
