@@ -8,10 +8,7 @@ public class Attributes : MonoBehaviour {
     GameObject Player;
     public bool invulnerable;
     public float invulnerabilityTime;
-    /*
-    private IEnumerator invulnerability;
-    private Coroutine currentCoroutine = null;
-    */
+    public float sizeChange;
 
 
     // Use this for initialization
@@ -45,7 +42,7 @@ public class Attributes : MonoBehaviour {
             invulnerable = true;
             Invoke("StopInvul", invulnerabilityTime);
             health--;
-            transform.localScale -= new Vector3(.02f, .02f, 0);
+            transform.localScale -= new Vector3(sizeChange, sizeChange, 0);
             Debug.Log("Damaged! health = " + health);
             if (health <= 0)
             {
@@ -61,7 +58,7 @@ public class Attributes : MonoBehaviour {
     {
         if (health < maxHealth)
         health++;
-        transform.localScale += new Vector3 (.02f, .02f, 0);
+        transform.localScale += new Vector3 (sizeChange, sizeChange, 0);
         Debug.Log("healed! health =" + health);
         this.GetComponent<PlayerController>().moveForce -= .5f;
     }
@@ -72,14 +69,4 @@ public class Attributes : MonoBehaviour {
     }
 
 
-    /*
-    IEnumerator radical(float invulnerabilityTime)
-    {
-        invulnerable = true;
-        Debug.Log("prepare for invul");
-        yield return new WaitForSeconds(invulnerabilityTime);
-        invulnerable = false;
-        StopCoroutine(currentCoroutine); // nope
-    }
-    */
 }

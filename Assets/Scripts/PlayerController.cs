@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         float yPos = joystick.GetComponent<RectTransform>().anchoredPosition.y;
 
         float xRotation = (float)(Math.Atan2(xPos, yPos)*(180/3.1415)*-1);
-        Debug.Log(xRotation);
+       // Debug.Log(xRotation);
         //Vector3 rotation = new Vector3(0,0 , xRotation);
         transform.localEulerAngles = new Vector3(0, 0, xRotation);
         //transform.Rotate(rotation);
