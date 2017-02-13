@@ -17,14 +17,12 @@ public class Attributes : MonoBehaviour {
         health = 6;
         maxHealth = 6;
         invulnerable = false;
-        //invulnerability = radical(invulnerabilityTime);
-
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        DontDestroyOnLoad(this); // is this right?
+        DontDestroyOnLoad(this);
         
 	}
     // called when player takes damage
@@ -38,7 +36,7 @@ public class Attributes : MonoBehaviour {
         else if (health != 0)
         {
 
-            //currentCoroutine = StartCoroutine(invulnerability); // need to stop this to restart it
+            
             invulnerable = true;
             Invoke("StopInvul", invulnerabilityTime);
             health--;

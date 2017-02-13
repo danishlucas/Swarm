@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Enemy1MovementAI : MonoBehaviour {
+
     public GameObject Player;
-    // Use this for initialization
     public float movementPause;
     public float movementDelay;
     public float movementSpeed;
@@ -17,15 +17,8 @@ public class Enemy1MovementAI : MonoBehaviour {
         Player = GameObject.FindWithTag("Player");
     }
 
-	
-	// Update is called once per frame
-	void Update () {
-        
-
-
-    }
-
-    void move() // somewhat random movement for enemy
+    // somewhat random movement for enemy
+    void move() 
     {
         int rando = Random.Range(0, 15);
         if (rando >= 12 && rando < 15)
@@ -79,7 +72,5 @@ public class Enemy1MovementAI : MonoBehaviour {
 
         }
     }
-
-
 }
 
