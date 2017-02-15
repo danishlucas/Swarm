@@ -39,7 +39,8 @@ public class Enemy1MovementAI : MonoBehaviour {
     void rotatoPotato()
     {
         transform.LookAt(Player.transform.position);
-        transform.Rotate(new Vector3(0, -90, -90), Space.Self);//correcting the original rotation
+        //transform.Rotate(new Vector3(0,-90, -90), Space.Self);//correcting the original rotation
+        transform.Rotate(new Vector3(0, -90, -90), Space.Self); // need to make y always rotato to 0!!!
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -71,6 +72,10 @@ public class Enemy1MovementAI : MonoBehaviour {
             }
 
         }
+    }
+    protected void LateUpdate()
+    {
+        //transform.localEulerAngles = new Vector3(0, 0, transform.localEulerAngles.z);
     }
 }
 
