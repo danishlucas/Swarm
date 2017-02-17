@@ -1,17 +1,21 @@
 fileFormatVersion: 2
-guid: 8674ce70c78d21d4a9ff19f60f9e6af3
-timeCreated: 1487092114
+guid: 62bc9e21207eb884c9aaba6b125c519f
+timeCreated: 1487183200
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Computer sprite sheet_0
-    21300002: Computer sprite sheet_1
-    21300004: Computer sprite sheet_2
-    21300006: Computer sprite sheet_3
+    21300000: SmallDoorAnim_0
+    21300002: SmallDoorAnim_1
+    21300004: SmallDoorAnim_2
+    21300006: SmallDoorAnim_3
+    21300008: SmallDoorAnim_4
+    21300010: SmallDoorAnim_5
+    21300012: SmallDoorAnim_6
+    21300014: SmallDoorAnim_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -57,52 +61,104 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Computer sprite sheet_0
+      name: SmallDoorAnim_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 483
-        width: 76
-        height: 29
+        x: 48
+        y: 696
+        width: 204
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer sprite sheet_1
+      name: SmallDoorAnim_1
       rect:
         serializedVersion: 2
-        x: 110
-        y: 483
-        width: 76
-        height: 29
+        x: 276
+        y: 696
+        width: 204
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer sprite sheet_2
+      name: SmallDoorAnim_2
       rect:
         serializedVersion: 2
-        x: 199
-        y: 483
-        width: 76
-        height: 29
+        x: 504
+        y: 696
+        width: 204
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer sprite sheet_3
+      name: SmallDoorAnim_3
       rect:
         serializedVersion: 2
-        x: 294
-        y: 483
-        width: 76
-        height: 29
+        x: 732
+        y: 696
+        width: 204
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SmallDoorAnim_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 696
+        width: 204
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SmallDoorAnim_5
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 696
+        width: 204
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SmallDoorAnim_6
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 696
+        width: 204
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SmallDoorAnim_7
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 696
+        width: 204
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

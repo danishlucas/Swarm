@@ -1,17 +1,21 @@
 fileFormatVersion: 2
-guid: 8674ce70c78d21d4a9ff19f60f9e6af3
-timeCreated: 1487092114
+guid: 05f0b5eac7642c942ae98e6a29e52cea
+timeCreated: 1487182417
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Computer sprite sheet_0
-    21300002: Computer sprite sheet_1
-    21300004: Computer sprite sheet_2
-    21300006: Computer sprite sheet_3
+    21300000: DOORSPRITE1_0
+    21300002: DOORSPRITE1_1
+    21300004: DOORSPRITE1_2
+    21300006: DOORSPRITE1_3
+    21300008: DOORSPRITE1_4
+    21300010: DOORSPRITE1_5
+    21300012: DOORSPRITE1_6
+    21300014: DOORSPRITE1_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -57,52 +61,104 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Computer sprite sheet_0
+      name: DOORSPRITE1_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 483
-        width: 76
-        height: 29
+        x: 12
+        y: 1020
+        width: 204
+        height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer sprite sheet_1
+      name: DOORSPRITE1_1
       rect:
         serializedVersion: 2
-        x: 110
-        y: 483
-        width: 76
-        height: 29
+        x: 252
+        y: 1020
+        width: 204
+        height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer sprite sheet_2
+      name: DOORSPRITE1_2
       rect:
         serializedVersion: 2
-        x: 199
-        y: 483
-        width: 76
-        height: 29
+        x: 492
+        y: 1020
+        width: 204
+        height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer sprite sheet_3
+      name: DOORSPRITE1_3
       rect:
         serializedVersion: 2
-        x: 294
-        y: 483
-        width: 76
-        height: 29
+        x: 732
+        y: 1020
+        width: 204
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DOORSPRITE1_4
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1020
+        width: 204
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DOORSPRITE1_5
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1020
+        width: 204
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DOORSPRITE1_6
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1020
+        width: 204
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DOORSPRITE1_7
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 1020
+        width: 204
+        height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
