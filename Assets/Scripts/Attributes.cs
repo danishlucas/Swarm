@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Attributes : MonoBehaviour {
@@ -31,7 +32,6 @@ public class Attributes : MonoBehaviour {
         if (this.GetComponent<PlayerController>().isDashing == true || invulnerable == true)
         {
             Debug.Log("Ha we don't take damage get rekt");
-
         }
         else if (health != 0)
         {
@@ -45,6 +45,8 @@ public class Attributes : MonoBehaviour {
             if (health <= 0)
             {
                 Debug.Log("Alas! I am slain!");
+                Destroy(GameObject.Find("PLAYER"));
+                SceneManager.LoadScene("DeathScene");
             }
             this.GetComponent<PlayerController>().moveForce += .5f;
 
