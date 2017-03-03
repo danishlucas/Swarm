@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyFiringAI : MonoBehaviour {
+public class ShotgunBangFiringAI : MonoBehaviour
+{
 
     public GameObject Player;
     public GameObject bullet;
@@ -16,11 +17,11 @@ public class EnemyFiringAI : MonoBehaviour {
     {
 
 
-            InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
-            Player = GameObject.FindWithTag("Player");
-        
-        
-        
+        InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
+        Player = GameObject.FindWithTag("Player");
+
+
+
     }
 
     void Update()
@@ -51,11 +52,15 @@ public class EnemyFiringAI : MonoBehaviour {
             if (!blocked)
             {
                 CircleCollider2D playerCollider = Player.GetComponent<CircleCollider2D>();
-                GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
+                
                 float angle = Mathf.Atan2(Player.transform.position.y - transform.position.y,
                                            Player.transform.position.x - transform.position.x);
-                Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
-                rb2.velocity = new Vector2(Mathf.Cos(angle) * shotSpeed, Mathf.Sin(angle) * shotSpeed);
+                for (int i = -2; i < 3; i++)
+                {
+                    GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
+                    Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
+                    rb2.velocity = new Vector2(Mathf.Cos(angle + (0.17453293f * i)) * shotSpeed, Mathf.Sin(angle + (0.17453293f * i)) * shotSpeed);
+                }
             }
         }
     }

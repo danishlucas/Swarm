@@ -8,11 +8,9 @@ public class KillWhenTouched : MonoBehaviour
 
 
     GameObject room;
-    public int whichRoom;
     void Start()
     {
-        String currRoom = ("Room " + whichRoom);
-        room = GameObject.Find(currRoom);
+        room = GetComponent<EnemyAttributes>().room;
     }
 
     // Update is called once per frame

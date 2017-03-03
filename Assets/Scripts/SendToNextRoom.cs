@@ -26,21 +26,21 @@ public class SendToNextRoom : MonoBehaviour
             if (dir == 1)
             {
                 Debug.Log("Norf");
-                other.transform.Translate(Vector2.up * 3.5f, Camera.main.transform);
+                other.transform.Translate(Vector2.up * 4.5f, Camera.main.transform);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(0, 11, 0);
             }
             if (dir == 2)
             {
                 Debug.Log("I thought you said Weast");
-                other.transform.Translate(Vector2.right * 3.5f, Camera.main.transform);
+                other.transform.Translate(Vector2.right * 4.5f, Camera.main.transform);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(16, 0, 0);
             }
             if (dir == 3)
             {
                 Debug.Log("Southernly");
-                other.transform.Translate(Vector2.down * 3.5f, Camera.main.transform);
+                other.transform.Translate(Vector2.down * 4.5f, Camera.main.transform);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(0, -11, 0);
             }
@@ -48,7 +48,7 @@ public class SendToNextRoom : MonoBehaviour
             {
                 Debug.Log("real west side");
 
-                other.transform.Translate(Vector2.left * 3.5f, Camera.main.transform);
+                other.transform.Translate(Vector2.left * 4.5f, Camera.main.transform);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(-16, 0, 0);
             }
