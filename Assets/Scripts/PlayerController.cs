@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 using System;
 
 public class PlayerController : MonoBehaviour
@@ -14,6 +15,9 @@ public class PlayerController : MonoBehaviour
     public bool buttonAvailable = true;
     private Animator animation;
     public GameObject joystick;
+    public GameObject button;
+    public float fillAmount;
+    private Image cooldown;
 
 
 
@@ -23,6 +27,7 @@ public class PlayerController : MonoBehaviour
         animation = GetComponent<Animator>();
 
         myBody = this.GetComponent<Rigidbody2D>();
+        cooldown = button.GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -58,12 +63,16 @@ public class PlayerController : MonoBehaviour
             deltaTime1++;
             isDashing = true;
             buttonAvailable = false;
+            cooldown.fillAmount += .04f;
+            cooldown.fillAmount = 0;
+            
         }
         else if (deltaTime1 > 20 && deltaTime1 < 50)
         {
             isDashing = false;
             buttonAvailable = false;
             deltaTime1++;
+            cooldown.fillAmount += .04f;
         }
         if (deltaTime1 == 50)
         {
