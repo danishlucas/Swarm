@@ -59,7 +59,7 @@ public class Attributes : MonoBehaviour {
         if (health < maxHealth)
         health++;
         transform.localScale += new Vector3 (sizeChange, sizeChange, 0);
-        Debug.Log("healed! health =" + health);
+        Debug.Log("healed! health = " + health);
         this.GetComponent<PlayerController>().moveForce -= .5f;
     }
 

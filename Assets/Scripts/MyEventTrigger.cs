@@ -10,7 +10,7 @@ public class MyEventTrigger : EventTrigger {
         if (gameObject.name == "Enter the Dungeon")
         {
             Debug.Log("Click");
-            SceneManager.LoadScene("Cam'sTestScene");
+            SceneManager.LoadScene("Dane'sTestScene");
         } else if (gameObject.name == "Continue?")
         {
             SceneManager.LoadScene("MenuScene");
