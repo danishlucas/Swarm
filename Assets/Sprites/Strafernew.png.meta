@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 0afd112f952d7714f89ad9f9c30286dd
+timeCreated: 1489165612
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Strafernew_0
+    21300002: Strafernew_1
+    21300004: Strafernew_2
+    21300006: Strafernew_3
+    21300008: Strafernew_4
+    21300010: Strafernew_5
+    21300012: Strafernew_6
+    21300014: Strafernew_7
+    21300016: Strafernew_8
+    21300018: Strafernew_9
+    21300020: Strafernew_10
+    21300022: Strafernew_11
+    21300024: Strafernew_12
+    21300026: Strafernew_13
+    21300028: Strafernew_14
+    21300030: Strafernew_15
+    21300032: Strafernew_16
+    21300034: Strafernew_17
+    21300036: Strafernew_18
+    21300038: Strafernew_19
+    21300040: Strafernew_20
+    21300042: Strafernew_21
+    21300044: Strafernew_22
+    21300046: Strafernew_23
+    21300048: Strafernew_24
+    21300050: Strafernew_25
+    21300052: Strafernew_26
+    21300054: Strafernew_27
+    21300056: Strafernew_28
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Strafernew_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 48
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_3
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_4
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_5
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_6
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_7
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_8
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_9
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_10
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_11
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_12
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_13
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_14
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_15
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_16
+      rect:
+        serializedVersion: 2
+        x: 3211
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_17
+      rect:
+        serializedVersion: 2
+        x: 3411
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_18
+      rect:
+        serializedVersion: 2
+        x: 3611
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_19
+      rect:
+        serializedVersion: 2
+        x: 3811
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_20
+      rect:
+        serializedVersion: 2
+        x: 4011
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_21
+      rect:
+        serializedVersion: 2
+        x: 4211
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_22
+      rect:
+        serializedVersion: 2
+        x: 4411
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_23
+      rect:
+        serializedVersion: 2
+        x: 4611
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_24
+      rect:
+        serializedVersion: 2
+        x: 4811
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_25
+      rect:
+        serializedVersion: 2
+        x: 5011
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_26
+      rect:
+        serializedVersion: 2
+        x: 5611
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_27
+      rect:
+        serializedVersion: 2
+        x: 5411
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Strafernew_28
+      rect:
+        serializedVersion: 2
+        x: 5211
+        y: 47
+        width: 193
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
