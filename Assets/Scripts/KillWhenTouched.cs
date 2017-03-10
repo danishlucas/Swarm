@@ -26,7 +26,7 @@ public class KillWhenTouched : MonoBehaviour
             }
             else
             {
-                other.GetComponent<Attributes>().takeDamage(); // test this shit then we can push!!!!
+                other.GetComponent<Attributes>().takeDamage(); 
             }
         }
     }

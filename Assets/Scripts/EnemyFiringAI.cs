@@ -9,7 +9,7 @@ public class EnemyFiringAI : MonoBehaviour {
     public float shotDelay;
     public float repeatRate;
     public float shotSpeed;
-    public Renderer playerRend;
+    //public Renderer playerRend;
     private bool blocked;
 
     void Start()
