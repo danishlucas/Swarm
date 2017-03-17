@@ -3,7 +3,29 @@ using System.Collections;
 
 public class SpeedUpItem : MonoBehaviour {
 
-	void OnTriggerEnter2D (Collider2D other)
+    private bool active;
+
+
+    void Start()
+    {
+        active = false;
+        StartCoroutine("Activate");
+
+    }
+
+    void Update()
+    {
+        if (!active)
+        {
+            gameObject.layer = 12;
+        }
+        else
+        {
+            gameObject.layer = 11;
+        }
+    }
+
+    void OnTriggerEnter2D (Collider2D other)
     {
         if (other.tag == "Player")
         {
@@ -12,6 +34,13 @@ public class SpeedUpItem : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-	
-	}
+
+    IEnumerator Activate()
+    {
+        yield return new WaitForSeconds(1.25f);
+        active = true;
+    }
+
+
+}
 

@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ShotgunBangFiringAI : MonoBehaviour
 {
-
     public GameObject Player;
     public GameObject bullet;
     public GameObject shotSpawn;
@@ -15,7 +14,6 @@ public class ShotgunBangFiringAI : MonoBehaviour
 
     void Start()
     {
-
 
         InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
         Player = GameObject.FindWithTag("Player");

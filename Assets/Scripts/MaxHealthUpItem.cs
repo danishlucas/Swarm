@@ -5,10 +5,26 @@ public class MaxHealthUpItem : MonoBehaviour
 {
 
     GameObject Player;
+    private bool active;
     void Start()
     {
+        active = false;
         Player = GameObject.Find("Player");
+        StartCoroutine("Activate");
     }
+
+    void Update()
+    {
+        if (!active)
+        {
+            gameObject.layer = 12;
+        }
+        else
+        {
+            gameObject.layer = 11;
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -22,4 +38,11 @@ public class MaxHealthUpItem : MonoBehaviour
         }
 
     }
+
+    IEnumerator Activate()
+    {
+        yield return new WaitForSeconds(1.25f);
+        active = true;
+    }
+
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyFiringAI : MonoBehaviour {
 
-    public GameObject Player;
+    private GameObject Player;
     public GameObject bullet;
     public GameObject shotSpawn;
     public float shotDelay;
@@ -15,12 +15,8 @@ public class EnemyFiringAI : MonoBehaviour {
     void Start()
     {
 
-
-            InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
-            Player = GameObject.FindWithTag("Player");
-        
-        
-        
+        InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
+        Player = GameObject.FindWithTag("Player");
     }
 
     void Update()

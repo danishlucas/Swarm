@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Enemy1MovementAI : MonoBehaviour {
 
-    public GameObject Player;
+    private GameObject Player;
     public float movementPause;
     public float movementDelay;
     public float movementSpeed;
@@ -12,14 +12,14 @@ public class Enemy1MovementAI : MonoBehaviour {
 
     void Start () {
 
-            InvokeRepeating("move", movementDelay, movementPause);
-            InvokeRepeating("rotatoPotato", 0, .05f);
-            rb = GetComponent<Rigidbody2D>();
-            Player = GameObject.FindWithTag("Player");
+        InvokeRepeating("Move", movementDelay, movementPause);
+        InvokeRepeating("rotatoPotato", 0, .05f);
+        rb = GetComponent<Rigidbody2D>();
+        Player = GameObject.FindWithTag("Player");
     }
 
     // somewhat random movement for enemy
-    void move() 
+    void Move() 
     {
         if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom)
         {
