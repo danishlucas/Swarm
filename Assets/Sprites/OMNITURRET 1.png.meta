@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: e342c4c28093033409d6a4e943185170
+timeCreated: 1488997291
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: OMNITURRET 1_0
+    21300002: OMNITURRET 1_1
+    21300004: OMNITURRET 1_2
+    21300006: OMNITURRET 1_3
+    21300008: OMNITURRET 1_4
+    21300010: OMNITURRET 1_5
+    21300012: OMNITURRET 1_6
+    21300014: OMNITURRET 1_7
+    21300016: OMNITURRET 1_8
+    21300018: OMNITURRET 1_9
+    21300020: OMNITURRET 1_10
+    21300022: OMNITURRET 1_11
+    21300024: OMNITURRET 1_12
+    21300026: OMNITURRET 1_13
+    21300028: OMNITURRET 1_14
+    21300030: OMNITURRET 1_15
+    21300032: OMNITURRET 1_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OMNITURRET 1_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 876
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 876
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 888
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 888
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 888
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_5
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 888
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 684
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_7
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 684
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_8
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 684
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_9
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 684
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_10
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 684
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 432
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_12
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 432
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 432
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_14
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 432
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_15
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 420
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: OMNITURRET 1_16
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 420
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
