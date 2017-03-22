@@ -14,6 +14,7 @@ public class SendToNextRoom : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        room = gameObject.transform.root.gameObject;
         active = false;
         animation = GetComponent<Animator>();
         
