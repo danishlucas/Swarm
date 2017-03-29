@@ -1,17 +1,18 @@
 fileFormatVersion: 2
-guid: 63e01f8b5055ee54b99ccb851cbe8ace
-timeCreated: 1490025248
+guid: 3297b80eb0ef12e4f8c7530ce1bdb7fd
+timeCreated: 1490631984
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SpeedUp_0
-    21300002: SpeedUp_1
-    21300004: SpeedUp_2
-    21300006: SpeedUp_3
-    21300008: SpeedUp_4
-    21300010: SpeedUp_5
-    21300012: SpeedUp_6
-    21300014: SpeedUp_7
+    21300000: ChestOpen_0
+    21300002: ChestOpen_1
+    21300004: ChestOpen_2
+    21300006: ChestOpen_3
+    21300008: ChestOpen_4
+    21300010: ChestOpen_5
+    21300012: ChestOpen_6
+    21300014: ChestOpen_7
+    21300016: ChestOpen_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,104 +62,117 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpeedUp_0
+      name: ChestOpen_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 660
-        width: 96
-        height: 168
+        x: 0
+        y: 0
+        width: 785
+        height: 524
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpeedUp_1
+      name: ChestOpen_1
       rect:
         serializedVersion: 2
-        x: 264
-        y: 660
-        width: 96
-        height: 168
+        x: 807
+        y: 0
+        width: 789
+        height: 524
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpeedUp_2
+      name: ChestOpen_2
       rect:
         serializedVersion: 2
-        x: 504
-        y: 660
-        width: 96
-        height: 168
+        x: 1615
+        y: 0
+        width: 789
+        height: 524
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpeedUp_3
+      name: ChestOpen_3
       rect:
         serializedVersion: 2
-        x: 744
-        y: 660
-        width: 96
-        height: 168
+        x: 2424
+        y: 0
+        width: 792
+        height: 524
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpeedUp_4
+      name: ChestOpen_4
       rect:
         serializedVersion: 2
-        x: 984
-        y: 660
-        width: 95
-        height: 168
+        x: 3236
+        y: 0
+        width: 789
+        height: 536
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpeedUp_5
+      name: ChestOpen_5
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 660
-        width: 96
-        height: 168
+        x: 4045
+        y: 0
+        width: 789
+        height: 543
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpeedUp_6
+      name: ChestOpen_6
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 661
-        width: 96
-        height: 167
+        x: 4854
+        y: 0
+        width: 792
+        height: 555
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpeedUp_7
+      name: ChestOpen_7
       rect:
         serializedVersion: 2
-        x: 1704
-        y: 660
-        width: 96
-        height: 168
+        x: 5666
+        y: 0
+        width: 789
+        height: 557
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ChestOpen_8
+      rect:
+        serializedVersion: 2
+        x: 6475
+        y: 0
+        width: 789
+        height: 575
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
