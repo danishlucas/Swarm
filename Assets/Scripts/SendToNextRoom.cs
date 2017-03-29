@@ -28,6 +28,11 @@ public class SendToNextRoom : MonoBehaviour
         {
             animation.SetTrigger("EnemiesDead");
             active = true;
+            if (dir == 4)
+            {
+                transform.Rotate(Vector3.forward * 180);
+
+            }
         }
     }
 
