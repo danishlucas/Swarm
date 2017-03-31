@@ -28,6 +28,8 @@ public class RandomGenV2 : MonoBehaviour {
 
     GameObject[,] typeMap = new GameObject[7, 7]; //Map of Determined Objects
 
+    public List<Vector3> createdTiles;
+
     Vector3 center = new Vector3(3, 3); //Center
     public int roomCap; //Most Rooms in a floor
 
@@ -47,7 +49,10 @@ public class RandomGenV2 : MonoBehaviour {
         //Loop to set Random roomtype
         determineRoom(3, 3);
 
-        drawRooms();
+        if (roomCap == 0)
+        {
+            drawRooms();
+        }
 
         yield return 0;
         //StopCoroutine(GenerateLevel());
@@ -99,11 +104,11 @@ public class RandomGenV2 : MonoBehaviour {
         GameObject toDown = null;
 
         //Gets the rooms surrounding the targeted room
-        if (xLoc > 1 && xLoc < 6)
+        if (xLoc > 1 && xLoc < 6 && yLoc > 1 && yLoc < 6)
         {
             toLeft = typeMap[xLoc - 1, yLoc];
         }
-        if (xLoc < 6 && xLoc > 1)
+        if (xLoc < 6 && xLoc > 1 && yLoc > 1 && yLoc < 6)
         {
             toRight = typeMap[xLoc + 1, yLoc];
         }
@@ -211,12 +216,10 @@ public class RandomGenV2 : MonoBehaviour {
 
         //Find the index of the chosen roomtype
         for(int m = 0; m < compMap.Count - 1; m++){
-            if (compMap[m].Equals(finalRoom)){
+            if (compMap[m] == (finalRoom)){
                 finalRoomType = m;
             }
         }
-
-        System.Console.WriteLine(finalRoomType);
 
         //If the chosen room has a door to the left, generate that room
         if((finalRoomType == 0 || finalRoomType == 1 || finalRoomType == 5 || finalRoomType == 6 || finalRoomType == 7 || finalRoomType == 11 || finalRoomType == 12 || finalRoomType == 14) && (toLeft == null)){
@@ -280,8 +283,11 @@ public class RandomGenV2 : MonoBehaviour {
 
     //Generates Specified Roomtype GameObject
     void placeRoom(GameObject roomType){
-        GameObject tileObject;
-        tileObject = Instantiate(roomType, transform.position, transform.rotation) as GameObject;
+        if (!createdTiles.Contains(transform.position))
+        {
+            GameObject tileObject = Instantiate(roomType, transform.position, transform.rotation) as GameObject;
+            createdTiles.Add(tileObject.transform.position);
+        }           
     }
 
 }
