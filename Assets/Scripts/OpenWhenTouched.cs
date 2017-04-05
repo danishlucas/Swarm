@@ -20,6 +20,7 @@ public class OpenWhenTouched : MonoBehaviour
             
             GameObject item = Instantiate(itemChosen, itemSpawn.transform.position, itemSpawn.transform.rotation) as GameObject;
             GameObject chest = Instantiate(openedChest, this.transform.position, this.transform.rotation) as GameObject;
+            chest.transform.Translate(Vector3.down * .2f);
             Destroy(gameObject);
 
         }
