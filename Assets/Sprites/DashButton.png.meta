@@ -1,14 +1,11 @@
 fileFormatVersion: 2
-guid: e48e14a18e42a9348ac84792f6a4a617
-timeCreated: 1491408130
+guid: 7dd87018bf7356e4a96b4a01cba18861
+timeCreated: 1490376527
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: TANKENEMY_0
-    21300002: TANKENEMY_1
-    21300004: TANKENEMY_2
-    21300006: TANKENEMY_3
-    21300008: TANKENEMY_4
+    21300000: DashButton_0
+    21300002: DashButton_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,7 +31,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -58,67 +55,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TANKENEMY_0
+      name: DashButton_0
       rect:
         serializedVersion: 2
-        x: 528
-        y: 696
-        width: 156
-        height: 144
+        x: 516
+        y: 504
+        width: 360
+        height: 180
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: TANKENEMY_1
+      name: DashButton_1
       rect:
         serializedVersion: 2
-        x: 708
-        y: 696
-        width: 156
-        height: 144
+        x: 870
+        y: 106
+        width: 278
+        height: 278
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TANKENEMY_2
-      rect:
-        serializedVersion: 2
-        x: 888
-        y: 696
-        width: 156
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TANKENEMY_3
-      rect:
-        serializedVersion: 2
-        x: 1068
-        y: 696
-        width: 156
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: TANKENEMY_4
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 468
-        width: 72
-        height: 120
-      alignment: 9
-      pivot: {x: 0.5, y: 0.81}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
