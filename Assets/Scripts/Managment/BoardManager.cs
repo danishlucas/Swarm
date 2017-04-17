@@ -4,7 +4,6 @@ using System.Collections.Generic; 		//Allows us to use Lists.
 using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine random number generator.
 
 
-//Object to maintain and create boardstate/Levels
 public class BoardManager : MonoBehaviour
 {
 
@@ -47,24 +46,24 @@ public class BoardManager : MonoBehaviour
 
 
     //Private variables for simple step program
-    private bool up = false; //Has room up
-    private bool right = false; //Has room right
-    private bool down = false; //Has room down
-    private bool left = false; //Has room to left
-    private GameObject simpleRoom = null; //The room to instantiate
-    public int tileAmount; //Max num of rooms in the main chain
-    private bool setUp = false; //Need door up
-    private bool setRight = false; //Need door right
-    private bool setDown = false; //Need door down
-    private bool setLeft = false; //Need door left
+    private bool up = false;
+    private bool right = false;
+    private bool down = false;
+    private bool left = false;
+    private GameObject simpleRoom = null;
+    public int tileAmount;
+    private bool setUp = false;
+    private bool setRight = false;
+    private bool setDown = false;
+    private bool setLeft = false;
 
 
 
     //Method Call to set up level generation
     internal void SetupScene(int currentLevel)
     {
-        this.level = currentLevel; //Gets the current level
-        Start(); //Creates the appropriate boardstate
+        this.level = currentLevel;
+        Start();
     }
 
 
@@ -74,9 +73,9 @@ public class BoardManager : MonoBehaviour
 
         boardHolder = new GameObject("BoardHolder"); // Create the board holder
         //SetupTilesArray(); //Generates array of random objects
-        //InstantiateFromArray(roomMap); //Instantiates the remaining rooms
-        simpleStep(); //Moves the object to build level
+        simpleStep();
         placePlayer(); //Instantiates Player and Center Room
+        //InstantiateFromArray(roomMap); //Instantiates the remaining rooms
 
     }
 
@@ -84,23 +83,13 @@ public class BoardManager : MonoBehaviour
     //Simple GameObject that steps around and builds level
     void simpleStep()
     {
-        for (int i = 0; i < tileAmount; i++) //While number of main rooms is less than max
+        for (int i = 0; i < tileAmount; i++)
         {
-            int dir = decideType(); //Decide a random room type
-            fillRooms(up, right, down, left); //Fills the sides with treasure rooms
-            moveGen(dir); //Move the generator and place the room
-            
-            //Resets all variables
-            up = false;
-            right = false;
-            down = false;
-            left = false;
-            setUp = false;
-            setRight = false;
-            setDown = false;
-            setLeft = false;
+            int dir = decideType();
+            fillRooms(up, right, down, left);
+            moveGen(dir);
         }
-}
+    }
 
 
     int decideType() //Sets room number and random direction to continue stepping
@@ -109,7 +98,7 @@ public class BoardManager : MonoBehaviour
         int randType = doorType.Random;
         int movDir = 0;
 
-        IntRange fourTest = new IntRange(0, 3); 
+        IntRange fourTest = new IntRange(0, 3);
         IntRange threeTest = new IntRange(0, 2);
         IntRange twoTest = new IntRange(0, 1);
 

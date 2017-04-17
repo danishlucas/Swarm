@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-//Class to launch the manager objects if they are not loaded in
 public class Loader : MonoBehaviour {
 
     public GameObject gameManager;          //GameManager prefab to instantiate.
