@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 73f68df258f7a5749a3fa227705ed68c
-timeCreated: 1491586111
+timeCreated: 1490804650
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -67,10 +67,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 141
-        height: 57
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -78,12 +78,12 @@ TextureImporter:
       name: Begin button_1
       rect:
         serializedVersion: 2
-        x: 152
+        x: 56
         y: 0
-        width: 141
-        height: 57
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -91,12 +91,12 @@ TextureImporter:
       name: Begin button_2
       rect:
         serializedVersion: 2
-        x: 304
+        x: 112
         y: 0
-        width: 141
-        height: 57
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -104,12 +104,12 @@ TextureImporter:
       name: Begin button_3
       rect:
         serializedVersion: 2
-        x: 456
+        x: 168
         y: 0
-        width: 141
-        height: 57
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -117,12 +117,12 @@ TextureImporter:
       name: Begin button_4
       rect:
         serializedVersion: 2
-        x: 608
+        x: 224
         y: 0
-        width: 138
-        height: 57
+        width: 51
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -130,12 +130,12 @@ TextureImporter:
       name: Begin button_5
       rect:
         serializedVersion: 2
-        x: 754
+        x: 278
         y: 0
-        width: 141
-        height: 57
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -143,12 +143,12 @@ TextureImporter:
       name: Begin button_6
       rect:
         serializedVersion: 2
-        x: 906
+        x: 334
         y: 0
-        width: 141
-        height: 57
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -156,12 +156,12 @@ TextureImporter:
       name: Begin button_7
       rect:
         serializedVersion: 2
-        x: 1058
+        x: 390
         y: 0
-        width: 142
-        height: 57
+        width: 52
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
