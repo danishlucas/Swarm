@@ -8,7 +8,6 @@ public class Enemy1MovementAI : MonoBehaviour {
     public float movementDelay;
     public float movementSpeed;
     private Rigidbody2D rb;
-    
    
 
     void Start () {
