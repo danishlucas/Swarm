@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 5199a4a9df653a74e8c6631255b0bfc6
-timeCreated: 1492618169
+guid: 7dd87018bf7356e4a96b4a01cba18861
+timeCreated: 1492619234
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: TankEnemypart2_0
+    21300000: DashButton_0
+    21300002: DashButton_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +31,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -54,15 +55,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TankEnemypart2_0
+      name: DashButton_0
       rect:
         serializedVersion: 2
-        x: 684
-        y: 468
-        width: 60
-        height: 120
-      alignment: 9
-      pivot: {x: 0.47173664, y: 0.9946121}
+        x: 516
+        y: 504
+        width: 360
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DashButton_1
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 106
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

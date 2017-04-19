@@ -46,7 +46,7 @@ public class TankEnemyMovement : MonoBehaviour
         {
             deltaTime++;
         //Debug.Log(deltaTime);
-        if (deltaTime >= 2)
+        if (deltaTime >= 8)
         {
             deltaTime = 0;
         }
