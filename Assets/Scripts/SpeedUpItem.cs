@@ -29,8 +29,9 @@ public class SpeedUpItem : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            
-            other.GetComponent<PlayerController>().moveForce+=.5f;
+            if (other.GetComponent<PlayerController>().moveForce < 5.5)
+                other.GetComponent<PlayerController>().moveForce+=.5f;
+            other.GetComponent<Attributes>().speedUpsGrabbed++;
             Destroy(gameObject);
         }
     }

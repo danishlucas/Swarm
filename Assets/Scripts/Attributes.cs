@@ -10,6 +10,11 @@ public class Attributes : MonoBehaviour {
     public bool invulnerable;
     public float invulnerabilityTime;
     public float sizeChange;
+    public float speedUpsGrabbed;
+    public float maxSpeed;
+    public float theoreticalSpeed;
+    public float actualSpeed;
+    public float minSpeed;
 
 
     // Use this for initialization
@@ -18,12 +23,17 @@ public class Attributes : MonoBehaviour {
         health = 6;
         maxHealth = 6;
         invulnerable = false;
+        speedUpsGrabbed = 0;
+        theoreticalSpeed = 3;
+        actualSpeed = 3;
+        minSpeed = 2.5f;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
         DontDestroyOnLoad(this);
+        maxSpeed = 5f + speedUpsGrabbed;
         
 	}
     // called when player takes damage
@@ -48,7 +58,10 @@ public class Attributes : MonoBehaviour {
                 Destroy(GameObject.Find("PLAYER"));
                 SceneManager.LoadScene("DeathScene");
             }
-            this.GetComponent<PlayerController>().moveForce += .5f;
+            theoreticalSpeed += .5f;
+            if (theoreticalSpeed <= maxSpeed)
+                actualSpeed = theoreticalSpeed;
+            this.GetComponent<PlayerController>().moveForce = actualSpeed;
 
         }
 
@@ -60,7 +73,10 @@ public class Attributes : MonoBehaviour {
         health++;
         transform.localScale += new Vector3 (sizeChange, sizeChange, 0);
         Debug.Log("healed! health = " + health);
-        this.GetComponent<PlayerController>().moveForce -= .5f;
+        theoreticalSpeed -= .5f;
+        if (theoreticalSpeed >= minSpeed)
+            actualSpeed = theoreticalSpeed;
+            this.GetComponent<PlayerController>().moveForce = actualSpeed;
     }
 
     void StopInvul()
