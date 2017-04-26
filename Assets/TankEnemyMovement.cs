@@ -54,7 +54,6 @@ public class TankEnemyMovement : MonoBehaviour
             if (deltaTime == 1)
             {
                 rando = RandomNum();
-                Debug.Log(rando);
             }
             if (rando >= 0 && rando < 4)
             {

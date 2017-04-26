@@ -4,10 +4,12 @@ using System.Collections;
 public class SpeedUpItem : MonoBehaviour {
 
     private bool active;
+    public Attributes attributes;
 
 
     void Start()
     {
+        
         active = false;
         StartCoroutine("Activate");
 
@@ -29,9 +31,16 @@ public class SpeedUpItem : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            if (other.GetComponent<PlayerController>().moveForce < 5.5)
-                other.GetComponent<PlayerController>().moveForce+=.5f;
-            other.GetComponent<Attributes>().speedUpsGrabbed++;
+
+            attributes = other.GetComponent<Attributes>();
+            attributes.speedUpsGrabbed++;
+            attributes.theoreticalSpeed += .5f;
+            Debug.Log("theoretical speed up!");
+            if (attributes.theoreticalSpeed <= attributes.maxSpeed && attributes.theoreticalSpeed >= attributes.minSpeed)
+                attributes.actualSpeed = attributes.theoreticalSpeed;
+            Debug.Log("speed up grabbed, " + attributes.actualSpeed);
+            other.GetComponent<PlayerController>().moveForce = attributes.actualSpeed;
+
             Destroy(gameObject);
         }
     }

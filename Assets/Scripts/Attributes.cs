@@ -33,7 +33,8 @@ public class Attributes : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         DontDestroyOnLoad(this);
-        maxSpeed = 5f + speedUpsGrabbed;
+        maxSpeed = 5f + 0.5f * speedUpsGrabbed;
+        minSpeed = 2.5f + 0.5f * speedUpsGrabbed;
         
 	}
     // called when player takes damage
@@ -59,7 +60,8 @@ public class Attributes : MonoBehaviour {
                 SceneManager.LoadScene("DeathScene");
             }
             theoreticalSpeed += .5f;
-            if (theoreticalSpeed <= maxSpeed)
+            Debug.Log("theoretical speed up!");
+            if (theoreticalSpeed <= maxSpeed && theoreticalSpeed >= minSpeed)
                 actualSpeed = theoreticalSpeed;
             this.GetComponent<PlayerController>().moveForce = actualSpeed;
 
@@ -74,7 +76,7 @@ public class Attributes : MonoBehaviour {
         transform.localScale += new Vector3 (sizeChange, sizeChange, 0);
         Debug.Log("healed! health = " + health);
         theoreticalSpeed -= .5f;
-        if (theoreticalSpeed >= minSpeed)
+        if (theoreticalSpeed >= minSpeed && theoreticalSpeed <= maxSpeed)
             actualSpeed = theoreticalSpeed;
             this.GetComponent<PlayerController>().moveForce = actualSpeed;
     }
