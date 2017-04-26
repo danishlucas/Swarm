@@ -6,6 +6,7 @@ public class OneUpItem : MonoBehaviour {
     GameObject Player;
     Attributes stats;
     bool active;
+    int done;
 
     void Start()
     {
@@ -13,7 +14,7 @@ public class OneUpItem : MonoBehaviour {
         stats = Player.GetComponent<Attributes>();
         active = false;
         StartCoroutine("Activate");
-
+        done = 0;
         
     }
 
@@ -30,8 +31,9 @@ public class OneUpItem : MonoBehaviour {
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {  
+        if (other.gameObject.CompareTag("Player") && done == 0)
+        {
+            done++;
             Destroy(gameObject);
             stats.heal();    
         }

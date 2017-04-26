@@ -12,12 +12,17 @@ namespace UnityStandardAssets._2D
             {
                 var player = GameObject.FindWithTag("Player");
                 Attributes stats = player.GetComponent<Attributes>();
+                if (stats.invulnerable)
+                {
+                    Debug.Log("Bullet Slain!");
+                    Destroy(gameObject);
+                    return;
+                }
                 stats.takeDamage();
                 Destroy(gameObject);
             }
             if (other.tag == "Wall")
             {
-                
                 Destroy(gameObject);
             }
         }

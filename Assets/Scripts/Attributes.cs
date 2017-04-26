@@ -60,7 +60,6 @@ public class Attributes : MonoBehaviour {
                 SceneManager.LoadScene("DeathScene");
             }
             theoreticalSpeed += .5f;
-            Debug.Log("theoretical speed up!");
             if (theoreticalSpeed <= maxSpeed && theoreticalSpeed >= minSpeed)
                 actualSpeed = theoreticalSpeed;
             this.GetComponent<PlayerController>().moveForce = actualSpeed;

@@ -13,6 +13,7 @@ public class SpiderBossFiring : MonoBehaviour {
     // Use this for initialization
     void Start () {
         InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
+        Player = GameObject.FindWithTag("Player");
     }
 
     void LaunchProjectile()
