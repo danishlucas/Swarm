@@ -23,7 +23,6 @@ public class Score : MonoBehaviour {
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "MenuScene")
         {
-            Debug.Log("It do?");
             Destroy(GameObject.Find("ScoreObject"));
         }
         countText = GameObject.FindWithTag("CountText").GetComponent<Text>();

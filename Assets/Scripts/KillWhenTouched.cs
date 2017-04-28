@@ -28,7 +28,12 @@ public class KillWhenTouched : MonoBehaviour
                 } else if (GetComponentInParent<OmniTurretAI>() != null)
                 {
                     GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(1);
-                } else
+                }
+                else if (GetComponentInParent<SpiderBossFiring>() != null)
+                {
+                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(10);
+                }
+                else
                 {
                     GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(2);
                 }
