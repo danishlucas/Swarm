@@ -19,7 +19,10 @@ public class KillWhenTouched : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (other.GetComponent<PlayerController>().isDashing == true && done == 0)
+            PlayerController pc = other.GetComponent<PlayerController>();
+            if (pc == null)
+                pc = other.GetComponent<PCPlayerController>();
+            if (pc.isDashing == true && done == 0)
             {
                 float pointsMult = other.GetComponent<Attributes>().pointsMult;
                 done++;

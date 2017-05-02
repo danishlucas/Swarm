@@ -12,6 +12,10 @@ namespace UnityStandardAssets._2D
             {
                 var player = GameObject.FindWithTag("Player");
                 Attributes stats = player.GetComponent<Attributes>();
+                if (stats == null)
+                {
+                    stats = player.GetComponent<PCAttributes>();
+                }
                 if (stats.invulnerable)
                 {
                     Debug.Log("Bullet Slain!");
