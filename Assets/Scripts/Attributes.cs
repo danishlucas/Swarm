@@ -15,6 +15,7 @@ public class Attributes : MonoBehaviour {
     public float theoreticalSpeed;
     public float actualSpeed;
     public float minSpeed;
+    public float pointsMult;
 
 
     // Use this for initialization
@@ -27,6 +28,7 @@ public class Attributes : MonoBehaviour {
         theoreticalSpeed = 3;
         actualSpeed = 3;
         minSpeed = 2.5f;
+        pointsMult = 1;
 
     }
 	
@@ -85,5 +87,15 @@ public class Attributes : MonoBehaviour {
         invulnerable = false;
     }
 
+    public void increasePointsMult()
+    {
+        pointsMult += .5f;
+        StartCoroutine("EndPointsMult");
+    }
 
+    IEnumerator EndPointsMult()
+    {
+        yield return new WaitForSeconds(32.5f);
+        pointsMult -= 0.5f;
+    }
 }

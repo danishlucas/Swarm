@@ -21,21 +21,18 @@ public class KillWhenTouched : MonoBehaviour
         {
             if (other.GetComponent<PlayerController>().isDashing == true && done == 0)
             {
+                float pointsMult = other.GetComponent<Attributes>().pointsMult;
                 done++;
                 if (GetComponentInParent<TankEnemyMovement>() != null)
                 {
-                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(3);
+                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(10 * pointsMult);
                 } else if (GetComponentInParent<OmniTurretAI>() != null)
                 {
-                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(1);
-                }
-                else if (GetComponentInParent<SpiderBossFiring>() != null)
-                {
-                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(10);
-                }
+                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(4 * pointsMult);
+                }            
                 else
                 {
-                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(2);
+                    GameObject.Find("ScoreObject").GetComponent<Score>().changeScore(6 * pointsMult);
                 }
                 gameObject.GetComponent<EnemyAttributes>().tryDropHealth();
                 Destroy(gameObject);

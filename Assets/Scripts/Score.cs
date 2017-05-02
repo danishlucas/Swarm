@@ -5,7 +5,7 @@ using System.Collections;
 
 public class Score : MonoBehaviour {
 
-    public int score;
+    public float score;
     //private Scene menu;
     public Text countText;
 	// Use this for initialization
@@ -30,7 +30,7 @@ public class Score : MonoBehaviour {
         
 	}
 
-    public void changeScore(int number)
+    public void changeScore(float number)
     {
         score += number;
     }

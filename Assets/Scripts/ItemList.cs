@@ -8,6 +8,7 @@ public class ItemList : MonoBehaviour {
     public GameObject HealItem;
     public GameObject SpeedUpItem;
     public GameObject maxHealthItem;
+    public GameObject bonusPointsItem;
     public List<GameObject> list;
 
 
@@ -17,6 +18,7 @@ public class ItemList : MonoBehaviour {
         list.Add(HealItem);
         list.Add(SpeedUpItem);
         list.Add(maxHealthItem);
+        list.Add(bonusPointsItem);
         Debug.Log("items: " + list.Count);
         // more!
 	}
