@@ -10,6 +10,8 @@ public class SendToNextRoom : MonoBehaviour
     private Animator animation;
     public GameObject room;
     private bool active;
+    AudioSource audio;
+
 
     // Use this for initialization
     void Start()
@@ -17,7 +19,7 @@ public class SendToNextRoom : MonoBehaviour
         room = gameObject.transform.root.gameObject;
         active = false;
         animation = GetComponent<Animator>();
-        
+        audio = GetComponent<AudioSource>();
 
     }
 
@@ -28,6 +30,7 @@ public class SendToNextRoom : MonoBehaviour
         {
             animation.SetTrigger("EnemiesDead");
             active = true;
+            audio.Play();
             if (dir == 4)
             {
                 transform.Rotate(Vector3.forward * 180);
