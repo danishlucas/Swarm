@@ -53,6 +53,7 @@ public class Attributes : MonoBehaviour {
             invulnerable = true;
             Invoke("StopInvul", invulnerabilityTime);
             health--;
+            StartCoroutine("Damblage");
             transform.localScale -= new Vector3(sizeChange, sizeChange, 0);
             Debug.Log("Damaged! health = " + health);
             if (health <= 0)
@@ -97,5 +98,18 @@ public class Attributes : MonoBehaviour {
     {
         yield return new WaitForSeconds(32.5f);
         pointsMult -= 0.5f;
+    }
+
+    IEnumerator Damblage()
+    {
+        Renderer renderer = GetComponent<Renderer>();
+        for (var n = 0; n < 5; n++)
+        {
+            renderer.enabled = true;
+            yield return new WaitForSeconds(.05f);
+            renderer.enabled = false;
+            yield return new WaitForSeconds(.05f);
+        }
+        renderer.enabled = true;
     }
 }
