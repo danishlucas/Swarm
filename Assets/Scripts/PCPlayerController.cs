@@ -6,17 +6,18 @@ using System;
 
 public class PCPlayerController : PlayerController {
     Rigidbody2D myBody;
-    public float moveForce = 3;
+    private Animator animation;
+    /*public float moveForce = 3;
     public float dashForce = 50;
     public int deltaTime1 = 0;
     public int deltaTime2;
     public bool isDashing;
     public bool buttonAvailable = true;
-    private Animator animation;
+    
     //public GameObject joystick;
     //public GameObject button;
     //public float fillAmount;
-    //private Image cooldown;
+    //private Image cooldown;*/
 
 
 
@@ -34,6 +35,7 @@ public class PCPlayerController : PlayerController {
     {
         var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         transform.position += move * moveForce * Time.deltaTime;
+        transform.up = myBody.velocity;
         //float xPos = joystick.GetComponent<RectTransform>().anchoredPosition.x;
         //float yPos = joystick.GetComponent<RectTransform>().anchoredPosition.y;
 
