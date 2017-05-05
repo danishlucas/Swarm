@@ -4,9 +4,9 @@ using System.Collections;
 
 public class PCAttributes : Attributes {
 
-    public int health;
-    public int maxHealth;
     GameObject Player;
+   /* public int health;
+    public int maxHealth;
     public bool invulnerable;
     public float invulnerabilityTime;
     public float sizeChange;
@@ -14,7 +14,7 @@ public class PCAttributes : Attributes {
     public float maxSpeed;
     public float theoreticalSpeed;
     public float actualSpeed;
-    public float minSpeed;
+    public float minSpeed;*/
 
 
     // Use this for initialization

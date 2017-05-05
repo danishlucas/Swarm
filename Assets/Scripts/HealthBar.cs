@@ -16,7 +16,7 @@ public class HealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        health = Player.GetComponent<PCAttributes>().health;
+        health = Player.GetComponent<Attributes>().health;
         if (health >= 3)
         {
             HeartUI.sprite = HealthSprites[3];
