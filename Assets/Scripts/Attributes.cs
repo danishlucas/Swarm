@@ -16,6 +16,7 @@ public class Attributes : MonoBehaviour {
     public float actualSpeed;
     public float minSpeed;
     public float pointsMult;
+    public bool shielded;
 
 
     // Use this for initialization
@@ -29,7 +30,7 @@ public class Attributes : MonoBehaviour {
         actualSpeed = 3;
         minSpeed = 2.5f;
         pointsMult = 1;
-
+        shielded = false;
     }
 	
 	// Update is called once per frame
@@ -48,25 +49,32 @@ public class Attributes : MonoBehaviour {
         }
         else if (health != 0)
         {
-
-            
-            invulnerable = true;
-            Invoke("StopInvul", invulnerabilityTime);
-            health--;
-            StartCoroutine("Damblage");
-            transform.localScale -= new Vector3(sizeChange, sizeChange, 0);
-            Debug.Log("Damaged! health = " + health);
-            if (health <= 0)
+            if (shielded)
             {
-                Debug.Log("Alas! I am slain!");
-                Destroy(GameObject.Find("PLAYER"));
-                SceneManager.LoadScene("DeathScene");
+                shielded = false;
+                invulnerable = true;
+                Invoke("StopInvul", invulnerabilityTime);
             }
-            theoreticalSpeed += .5f;
-            if (theoreticalSpeed <= maxSpeed && theoreticalSpeed >= minSpeed)
-                actualSpeed = theoreticalSpeed;
-            this.GetComponent<PlayerController>().moveForce = actualSpeed;
+            else
+            {
 
+                invulnerable = true;
+                Invoke("StopInvul", invulnerabilityTime);
+                health--;
+                StartCoroutine("Damblage");
+                transform.localScale -= new Vector3(sizeChange, sizeChange, 0);
+                Debug.Log("Damaged! health = " + health);
+                if (health <= 0)
+                {
+                    Debug.Log("Alas! I am slain!");
+                    Destroy(GameObject.Find("PLAYER"));
+                    SceneManager.LoadScene("DeathScene");
+                }
+                theoreticalSpeed += .5f;
+                if (theoreticalSpeed <= maxSpeed && theoreticalSpeed >= minSpeed)
+                    actualSpeed = theoreticalSpeed;
+                this.GetComponent<PlayerController>().moveForce = actualSpeed;
+            }
         }
 
     }
