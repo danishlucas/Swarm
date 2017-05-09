@@ -101,12 +101,16 @@ public class MazeGen : MonoBehaviour {
     {
 
         // array[1,1] = 0;
-        List<int> neighbors = getNeighbors(1, 1);
+        List<int> neighbors = get0Neighbors(1, 1);
         if (neighbors.Count == 4)
         {
             GameObject instance = Instantiate(StartingRooms[1], transform.position, transform.rotation) as GameObject;
         }
-        else if (neighbors.Count == 2 && neighbors[0] == 2)
+        else if (neighbors.Count == 2 && neighbors[0] == 0)
+        {
+            GameObject instance = Instantiate(StartingRooms[1], transform.position, transform.rotation) as GameObject;
+        }
+        else if (neighbors.Count == 2 && neighbors[1] == 0)
         {
             GameObject instance = Instantiate(StartingRooms[1], transform.position, transform.rotation) as GameObject;
         }
@@ -183,12 +187,12 @@ public class MazeGen : MonoBehaviour {
             list.Add(x - 1);
             list.Add(y);
         }
-        if (isValid(x + 1, y))
+        if (array[x + 1, y] == 0)
         {
             list.Add(x + 1);
             list.Add(y);
         }
-        if (isValid(x, y + 1))
+        if (array[x, y + 1] == 0)
         {
             list.Add(x);
             list.Add(y + 1);
