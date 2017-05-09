@@ -9,6 +9,7 @@ public class ItemList : MonoBehaviour {
     public GameObject SpeedUpItem;
     public GameObject maxHealthItem;
     public GameObject bonusPointsItem;
+    public GameObject shieldItem;
     public List<GameObject> list;
 
 
@@ -19,6 +20,7 @@ public class ItemList : MonoBehaviour {
         list.Add(SpeedUpItem);
         list.Add(maxHealthItem);
         list.Add(bonusPointsItem);
+        list.Add(shieldItem);
         Debug.Log("items: " + list.Count);
         // more!
 	}
