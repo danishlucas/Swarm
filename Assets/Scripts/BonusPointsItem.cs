@@ -18,6 +18,18 @@ public class BonusPointsItem : MonoBehaviour {
 
     }
 
+    void Update()
+    {
+        if (!active)
+        {
+            gameObject.layer = 12;
+        }
+        else
+        {
+            gameObject.layer = 11;
+        }
+    }
+
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player") && done == 0)
