@@ -116,6 +116,9 @@ public class MazeGen : MonoBehaviour {
         }
         int currentCellX;
         int currentCellY;
+
+                // yoyoyoyoyoyoyooyoyoyy so all the room prefabs are off by a certain distance in the rooms in UsableFloor, 
+                // but if we say heck off then we can use that offset to our advantage
     }
 
 
