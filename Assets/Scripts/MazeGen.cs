@@ -114,11 +114,77 @@ public class MazeGen : MonoBehaviour {
         {
             GameObject instance = Instantiate(StartingRooms[1], transform.position, transform.rotation) as GameObject;
         }
-        int currentCellX;
-        int currentCellY;
+        int currentCellX = 2;
+        int currentCellY = 1;
+        neighbors.Clear();
+        // notes:
+        // up = currentCellY - 1
+        // left = currentCellX - 1
+        // right = currentCellX + 1
+        // down = currentCellY + 1
+        while(currentCellY != ySize - 1)
+        {
+            while (currentCellX != xSize - 1)
+            {
+                if (array[currentCellX, currentCellY] == 0)
+                {
+                    transform.position = new Vector3(16 * (currentCellX - 1), -11 * (currentCellY - 1), 0);
+                    neighbors = get0Neighbors(currentCellX, currentCellY);
+                    if (neighbors.Count == 8)
+                    {
+                        int magicNumber = Random.Range(0, NESW.Count);
+                        GameObject instance = Instantiate(NESW[magicNumber], transform.position, transform.rotation) as GameObject;
+                    }
+                    if (neighbors.Count == 6)
+                    {
+                       
+                        Debug.Log("Try spinning, that's a good trick");
+                        if (neighbors[1] == currentCellY - 1 && neighbors[2] == currentCellX - 1 && neighbors[4] == currentCellX + 1)
+                        {
+                            int magicNumber = Random.Range(0, NEW.Count);
+                            GameObject instance = Instantiate(NEW[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[1] == currentCellY - 1 && neighbors[2] == currentCellX - 1 && neighbors[5] == currentCellY + 1)
+                        {
+                            int magicNumber = Random.Range(0, NSW.Count);
+                            GameObject instance = Instantiate(NSW[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[1] == currentCellY - 1 && neighbors[2] == currentCellX + 1 && neighbors[5] == currentCellY + 1)
+                        {
+                            int magicNumber = Random.Range(0, NES.Count);
+                            GameObject instance = Instantiate(NES[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[0] == currentCellX - 1 && neighbors[2] == currentCellX + 1 && neighbors[5] == currentCellY + 1)
+                        {
+                            int magicNumber = Random.Range(0, ESW.Count);
+                            GameObject instance = Instantiate(ESW[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                    }
+                    if (neighbors.Count == 4)
+                    {
+                        Debug.Log("We have 4 things");
+
+                    }
+                    if (neighbors.Count == 2)
+                    {
+                        Debug.Log("NOW THIS IS PODRACING");
+                    }
+                }
+                neighbors.Clear();
+                currentCellX++;
+            }
+            currentCellY++;
+            currentCellX = 1;
+            Debug.Log("Dora would be proud; we did it");
+        }
+
+
 
                 // yoyoyoyoyoyoyooyoyoyy so all the room prefabs are off by a certain distance in the rooms in UsableFloor, 
                 // but if we say heck off then we can use that offset to our advantage
+                // sike we'll just fix them
+
+
     }
 
 
@@ -177,28 +243,34 @@ public class MazeGen : MonoBehaviour {
         return list;
     }
 
+    //order: top, left, right, bottom
     public List<int> get0Neighbors(int x, int y)
     {
         List<int> list = new List<int>();
-        if (array[x, y - 1] == 0)
+        if (y != 0 && array[x, y - 1] == 0)
         {
             list.Add(x);
             list.Add(y - 1);
         }
-        if (array[x - 1, y] == 0)
+        if (x != 0 && array[x - 1, y] == 0)
         {
             list.Add(x - 1);
             list.Add(y);
         }
-        if (array[x + 1, y] == 0)
+        if (x != xSize && array[x + 1, y] == 0)
         {
             list.Add(x + 1);
             list.Add(y);
         }
-        if (array[x, y + 1] == 0)
+        if (y != ySize && array[x, y + 1] == 0)
         {
             list.Add(x);
             list.Add(y + 1);
+        }
+        Debug.Log(x + " " + y + " " + list.Count);
+        foreach(int i in list)
+        {
+            Debug.Log(i);
         }
         return list;
     }
