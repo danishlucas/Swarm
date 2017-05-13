@@ -7,6 +7,7 @@ public class MazeGen : MonoBehaviour {
     public int xSize; // gotta be odd!
     public int ySize; // gotta be odd!
     public byte[,] array;
+    private bool bossRoomMade = false;
     public List<GameObject> StartingRooms = new List<GameObject>();
     public List<GameObject> N = new List<GameObject>();
     public List<GameObject> E = new List<GameObject>();
@@ -128,7 +129,7 @@ public class MazeGen : MonoBehaviour {
             {
                 if (array[currentCellX, currentCellY] == 0)
                 {
-                    transform.position = new Vector3(16 * (currentCellX - 1), -11 * (currentCellY - 1), 0);
+                    transform.position = new Vector3(20 * (currentCellX - 1), -11 * (currentCellY - 1), 0);
                     neighbors = get0Neighbors(currentCellX, currentCellY);
                     if (neighbors.Count == 8)
                     {
@@ -137,8 +138,6 @@ public class MazeGen : MonoBehaviour {
                     }
                     if (neighbors.Count == 6)
                     {
-                       
-                        Debug.Log("Try spinning, that's a good trick");
                         if (neighbors[1] == currentCellY - 1 && neighbors[2] == currentCellX - 1 && neighbors[4] == currentCellX + 1)
                         {
                             int magicNumber = Random.Range(0, NEW.Count);
@@ -162,12 +161,76 @@ public class MazeGen : MonoBehaviour {
                     }
                     if (neighbors.Count == 4)
                     {
-                        Debug.Log("We have 4 things");
+                        if (neighbors[1] == currentCellY - 1  && neighbors[2] == currentCellX + 1)
+                        {
+                            int magicNumber = Random.Range(0, NW.Count);
+                            GameObject instance = Instantiate(NW[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[1] == currentCellY - 1 && neighbors[3] == currentCellY + 1)
+                        {
+                            int magicNumber = Random.Range(0, NS.Count);
+                            GameObject instance = Instantiate(NS[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[1] == currentCellY - 1 && neighbors[2] == currentCellX - 1)
+                        {
+                            int magicNumber = Random.Range(0, NW.Count);
+                            GameObject instance = Instantiate(NW[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[0] == currentCellX + 1 && neighbors[3] == currentCellY + 1)
+                        {
+                            int magicNumber = Random.Range(0, ES.Count);
+                            GameObject instance = Instantiate(ES[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[0] == currentCellX - 1 && neighbors[2] == currentCellX + 1)
+                        {
+                            int magicNumber = Random.Range(0, EW.Count);
+                            GameObject instance = Instantiate(EW[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[0] == currentCellX - 1 && neighbors[3] == currentCellY + 1)
+                        {
+                            int magicNumber = Random.Range(0, SW.Count);
+                            GameObject instance = Instantiate(SW[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
 
                     }
                     if (neighbors.Count == 2)
                     {
-                        Debug.Log("NOW THIS IS PODRACING");
+                        if (neighbors[1] == currentCellY - 1)
+                        {
+                            int magicNumber = Random.Range(0, N.Count);
+                            GameObject instance = Instantiate(N[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
+                        if (neighbors[0] == currentCellX + 1)
+                        {
+                            if (!bossRoomMade)
+                            {
+                                GameObject instance = Instantiate(E[1], transform.position, transform.rotation) as GameObject;
+                                bossRoomMade = true;
+                            }
+                            else
+                            {
+                                //int magicNumber = Random.Range(0, E.Count);
+                                GameObject instance = Instantiate(E[0], transform.position, transform.rotation) as GameObject;
+                            }
+                        }
+                        if (neighbors[0] == currentCellX - 1)
+                        {
+                            if (!bossRoomMade)
+                            {
+                                GameObject instance = Instantiate(W[1], transform.position, transform.rotation) as GameObject;
+                                bossRoomMade = true;
+                            }
+                            else
+                            {
+                                //int magicNumber = Random.Range(0, E.Count);
+                                GameObject instance = Instantiate(W[0], transform.position, transform.rotation) as GameObject;
+                            }
+                        }
+                        if (neighbors[1] == currentCellY + 1)
+                        {
+                            int magicNumber = Random.Range(0, S.Count);
+                            GameObject instance = Instantiate(S[magicNumber], transform.position, transform.rotation) as GameObject;
+                        }
                     }
                 }
                 neighbors.Clear();
