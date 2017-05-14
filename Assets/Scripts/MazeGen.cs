@@ -107,13 +107,13 @@ public class MazeGen : MonoBehaviour {
         {
             GameObject instance = Instantiate(StartingRooms[1], transform.position, transform.rotation) as GameObject;
         }
-        else if (neighbors.Count == 2 && neighbors[0] == 0)
+        else if (neighbors.Count == 2 && neighbors[0] == 2)
         {
-            GameObject instance = Instantiate(StartingRooms[1], transform.position, transform.rotation) as GameObject;
+            GameObject instance = Instantiate(StartingRooms[2], transform.position, transform.rotation) as GameObject;
         }
-        else if (neighbors.Count == 2 && neighbors[1] == 0)
+        else if (neighbors.Count == 2 && neighbors[1] == 2)
         {
-            GameObject instance = Instantiate(StartingRooms[1], transform.position, transform.rotation) as GameObject;
+            GameObject instance = Instantiate(StartingRooms[3], transform.position, transform.rotation) as GameObject;
         }
         int currentCellX = 2;
         int currentCellY = 1;

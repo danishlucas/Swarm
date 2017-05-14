@@ -15,9 +15,9 @@ public class DeleteText : MonoBehaviour {
 	void Update () {
         if (this.GetComponent<PlayerInRoom>().InRoom)
         {
-            Destroy(welcome1);
-            Destroy(welcome2);
-            Destroy(welcome3);
+            Destroy(GameObject.Find("WelcomeText1"));
+            Destroy(GameObject.Find("WelcomeText2"));
+            Destroy(GameObject.Find("WelcomeText3"));
         }
 	
 	}
