@@ -13,6 +13,7 @@ public class SpiderBossFiring : MonoBehaviour {
     public int shotsFired;
     public int patternsCompleted;
     public bool startedMachineGun;
+    public bool doorEast;
 
     // Use this for initialization
     void Start () {
@@ -57,7 +58,10 @@ public class SpiderBossFiring : MonoBehaviour {
         {
             GameObject instance = Instantiate(smallBullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
             Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
-            rb2.velocity = new Vector2(Mathf.Cos((0.035f * i)) * (shotSpeed + 2), Mathf.Sin((0.035f * i)) * (shotSpeed + 2));
+            if (!doorEast) 
+                rb2.velocity = new Vector2(Mathf.Cos((0.035f * i) + Mathf.PI) * (shotSpeed + 2), Mathf.Sin((0.035f * i) + Mathf.PI) * (shotSpeed + 2));
+            else
+                rb2.velocity = new Vector2(Mathf.Cos((0.035f * i)) * (shotSpeed + 2), Mathf.Sin((0.035f * i)) * (shotSpeed + 2));
             yield return new WaitForSeconds(.02f);
         }
         startedMachineGun = false;
@@ -70,7 +74,10 @@ public class SpiderBossFiring : MonoBehaviour {
         {
             GameObject instance = Instantiate(smallBullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
             Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
-            rb2.velocity = new Vector2(Mathf.Cos((0.035f * i)) * (shotSpeed + 2), Mathf.Sin((0.035f * i)) * (shotSpeed + 2));
+            if (!doorEast)
+                rb2.velocity = new Vector2(Mathf.Cos((0.035f * i) + Mathf.PI) * (shotSpeed + 2), Mathf.Sin((0.035f * i) + Mathf.PI) * (shotSpeed + 2));
+            else
+                rb2.velocity = new Vector2(Mathf.Cos((0.035f * i)) * (shotSpeed + 2), Mathf.Sin((0.035f * i)) * (shotSpeed + 2));
             yield return new WaitForSeconds(.02f);
         }
         startedMachineGun = false;

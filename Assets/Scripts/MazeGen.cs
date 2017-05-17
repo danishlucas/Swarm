@@ -24,6 +24,7 @@ public class MazeGen : MonoBehaviour {
     public List<GameObject> NSW = new List<GameObject>();
     public List<GameObject> ESW = new List<GameObject>();
     public List<GameObject> NESW = new List<GameObject>();
+    private List<int> potBossLocs = new List<int>();
 
 
 
@@ -163,8 +164,8 @@ public class MazeGen : MonoBehaviour {
                     {
                         if (neighbors[1] == currentCellY - 1  && neighbors[2] == currentCellX + 1)
                         {
-                            int magicNumber = Random.Range(0, NW.Count);
-                            GameObject instance = Instantiate(NW[magicNumber], transform.position, transform.rotation) as GameObject;
+                            int magicNumber = Random.Range(0, NE.Count);
+                            GameObject instance = Instantiate(NE[magicNumber], transform.position, transform.rotation) as GameObject;
                         }
                         if (neighbors[1] == currentCellY - 1 && neighbors[3] == currentCellY + 1)
                         {
@@ -202,29 +203,18 @@ public class MazeGen : MonoBehaviour {
                         }
                         if (neighbors[0] == currentCellX + 1)
                         {
-                            if (!bossRoomMade)
-                            {
-                                GameObject instance = Instantiate(E[1], transform.position, transform.rotation) as GameObject;
-                                bossRoomMade = true;
-                            }
-                            else
-                            {
-                                //int magicNumber = Random.Range(0, E.Count);
-                                GameObject instance = Instantiate(E[0], transform.position, transform.rotation) as GameObject;
-                            }
+                            potBossLocs.Add(currentCellX);
+                            potBossLocs.Add(currentCellY);
                         }
                         if (neighbors[0] == currentCellX - 1)
                         {
-                            if (!bossRoomMade)
-                            {
+                            potBossLocs.Add(currentCellX);
+                            potBossLocs.Add(currentCellY);
+                                /*
                                 GameObject instance = Instantiate(W[1], transform.position, transform.rotation) as GameObject;
                                 bossRoomMade = true;
-                            }
-                            else
-                            {
-                                //int magicNumber = Random.Range(0, E.Count);
-                                GameObject instance = Instantiate(W[0], transform.position, transform.rotation) as GameObject;
-                            }
+                                */
+
                         }
                         if (neighbors[1] == currentCellY + 1)
                         {
@@ -241,11 +231,44 @@ public class MazeGen : MonoBehaviour {
             Debug.Log("Dora would be proud; we did it");
         }
 
+        // now let's actually make that sick boss room
+        if (potBossLocs.Count == 0)
+            Debug.Log("Shit no spots, we're doomed");
+        int randoNumber = Random.Range(0, potBossLocs.Count / 2);
+        int reps = 0;
+        while(potBossLocs.Count > 0)
+        {
+            transform.position = new Vector3(20 * (potBossLocs[0] - 1), -11 * (potBossLocs[1] - 1), 0);
+            neighbors = get0Neighbors(potBossLocs[0], potBossLocs[1]);
+            if (reps == randoNumber)
+            {
+                
+                if (neighbors[0] == potBossLocs[0] - 1)
+                { 
+                    GameObject instance = Instantiate(W[1], transform.position, transform.rotation) as GameObject;
+                }
+                else if (neighbors[0] == potBossLocs[0] + 1)
+                {
+                    GameObject instance = Instantiate(E[1], transform.position, transform.rotation) as GameObject;
+                }
+            }
+            else
+            {
+                if (neighbors[0] == potBossLocs[0] - 1)
+                {
+                    GameObject instance = Instantiate(W[0], transform.position, transform.rotation) as GameObject;
+                }
+                else if (neighbors[0] == potBossLocs[0] + 1)
+                {
+                    GameObject instance = Instantiate(E[0], transform.position, transform.rotation) as GameObject;
+                }
+            }
+            potBossLocs.RemoveAt(0);
+            potBossLocs.RemoveAt(0);
+            reps++;
+        }
 
 
-                // yoyoyoyoyoyoyooyoyoyy so all the room prefabs are off by a certain distance in the rooms in UsableFloor, 
-                // but if we say heck off then we can use that offset to our advantage
-                // sike we'll just fix them
 
 
     }
@@ -329,11 +352,6 @@ public class MazeGen : MonoBehaviour {
         {
             list.Add(x);
             list.Add(y + 1);
-        }
-        Debug.Log(x + " " + y + " " + list.Count);
-        foreach(int i in list)
-        {
-            Debug.Log(i);
         }
         return list;
     }
