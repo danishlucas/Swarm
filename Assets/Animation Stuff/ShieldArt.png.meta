@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: a966225adcde65f47bcca8910c77f948
-timeCreated: 1494432871
-licenseType: Pro
+timeCreated: 1495131465
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: ShieldArt_0
@@ -60,7 +60,7 @@ TextureImporter:
         x: 280
         y: 110
         width: 170
-        height: 168
+        height: 170
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
