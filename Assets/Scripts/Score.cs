@@ -20,6 +20,8 @@ public class Score : MonoBehaviour {
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "MenuScene")
         {
+            //saves the high score if the game is quit
+            PlayerPrefs.DeleteKey("Temp Score");
             PlayerPrefs.Save();
             Destroy(GameObject.Find("ScoreObject"));
         }
@@ -30,9 +32,8 @@ public class Score : MonoBehaviour {
             if (PlayerPrefs.GetFloat("Temp Score") > PlayerPrefs.GetFloat("High Score"))
             {
                 PlayerPrefs.SetFloat("High Score", PlayerPrefs.GetFloat("Temp Score"));
-            }  
-            Text highScore = GameObject.FindWithTag("HighScore").GetComponent<Text>();
-            highScore.text = PlayerPrefs.GetFloat("High Score").ToString();
+            }
+            GameObject.FindWithTag("HighScore").GetComponent<Text>().text = PlayerPrefs.GetFloat("High Score").ToString();
         }
 	}
 
@@ -40,6 +41,5 @@ public class Score : MonoBehaviour {
     {
         score += number;
         PlayerPrefs.SetFloat("Temp Score", score);
-        Debug.Log(PlayerPrefs.GetFloat("Temp Score"));
     }
 }

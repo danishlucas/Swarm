@@ -11,9 +11,14 @@ public class MyEventTrigger : EventTrigger {
         {
             Debug.Log("Click");
             SceneManager.LoadScene("Dane'sProceduralScene");
-        } else if (gameObject.name == "Continue?")
+        }
+        else if (gameObject.name == "Continue?")
         {
             SceneManager.LoadScene("MenuScene");
+        }
+        else if (gameObject.name == "Reset") { 
+            Debug.Log("does it do?");
+            PlayerPrefs.SetFloat("High Score", 0);
         }
         
     }
