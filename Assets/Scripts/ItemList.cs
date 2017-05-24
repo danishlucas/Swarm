@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class ItemList : MonoBehaviour {
 
-    public GameObject HealItem;
+   
     public GameObject SpeedUpItem;
     public GameObject maxHealthItem;
     public GameObject bonusPointsItem;
@@ -16,7 +16,6 @@ public class ItemList : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         list = new List<GameObject>();
-        list.Add(HealItem);
         list.Add(SpeedUpItem);
         list.Add(maxHealthItem);
         list.Add(bonusPointsItem);
