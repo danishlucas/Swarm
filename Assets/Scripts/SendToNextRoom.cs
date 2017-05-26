@@ -56,7 +56,7 @@ public class SendToNextRoom : MonoBehaviour
             if (dir == 2)
             {
                 Debug.Log("I thought you said Weast");
-                other.transform.Translate(Vector2.right * 8.5f, Camera.main.transform);
+                other.transform.Translate(Vector2.right * 8f, Camera.main.transform);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(20, 0, 0);
             }
@@ -71,7 +71,7 @@ public class SendToNextRoom : MonoBehaviour
             {
                 Debug.Log("real west side");
 
-                other.transform.Translate(Vector2.left * 8.5f, Camera.main.transform);
+                other.transform.Translate(Vector2.left * 8f, Camera.main.transform);
                 var cam = GameObject.Find("Main Camera");
                 cam.transform.Translate(-20, 0, 0);
             }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class TankEnemyMovement : MonoBehaviour
 {
@@ -13,19 +14,24 @@ public class TankEnemyMovement : MonoBehaviour
     public int rando;
     public bool horizontal;
     private Animator animation;
+    public GameObject EnemyStats;
 
 
 
 
     void Start()
     {
+        EnemyStats = GameObject.Find("EnemyStats");
+        List<float> TankMovement = EnemyStats.GetComponent<EnemyStats>().TankMovement;
+        movementPause = TankMovement[0];
+        movementDelay = TankMovement[1];
+        movementSpeed = TankMovement[2];
         animation = GetComponent<Animator>();
         InvokeRepeating("Move", movementDelay, movementPause);
-
-        //InvokeRepeating("rotatoPotato", 0, .05f);
         rb = GetComponent<Rigidbody2D>();
         Player = GameObject.FindWithTag("Player");
         horizontal = true;
+
     }
 
     public int RandomNum()

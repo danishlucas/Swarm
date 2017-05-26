@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class TankTurretFiringAI: MonoBehaviour
 {
@@ -10,12 +11,19 @@ public class TankTurretFiringAI: MonoBehaviour
     public float repeatRate;
     private bool blocked;
     public float shotSpeed;
+    public GameObject EnemyStats;
     // Use this for initialization
     void Start()
     {
         Player = GameObject.FindWithTag("Player");
+        EnemyStats = GameObject.Find("EnemyStats");
+        List<float> TankFiring = EnemyStats.GetComponent<EnemyStats>().TankFiring;
+        shotDelay = TankFiring[0];
+        repeatRate = TankFiring[1];
+        shotSpeed = TankFiring[2];
         InvokeRepeating("rotatoPotato", 0, .05f);
         InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
+
     }
 
     void rotatoPotato()

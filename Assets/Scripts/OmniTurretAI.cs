@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class OmniTurretAI : MonoBehaviour
 {
     public GameObject bullet;
     public GameObject shotSpawn;
+    public GameObject EnemyStats;
     public float shotDelay;
     public float repeatRate;
     public float shotSpeed;
@@ -15,7 +17,11 @@ public class OmniTurretAI : MonoBehaviour
 
     void Start()
     {
-        
+        EnemyStats = GameObject.Find("EnemyStats");
+        List<float> OmniFiring = EnemyStats.GetComponent<EnemyStats>().OmniFiring;
+        shotDelay = OmniFiring[0];
+        repeatRate = OmniFiring[1];
+        shotSpeed = OmniFiring[2];
         //InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
         nesw = false; 
         started = false;

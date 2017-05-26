@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class EnemyFiringAI : MonoBehaviour {
 
     private GameObject Player;
     public GameObject bullet;
     public GameObject shotSpawn;
+    public GameObject EnemyStats;
     public float shotDelay;
     public float repeatRate;
     public float shotSpeed;
@@ -14,9 +16,14 @@ public class EnemyFiringAI : MonoBehaviour {
 
     void Start()
     {
-
+        EnemyStats = GameObject.Find("EnemyStats");
+        List<float> StraferFiring = EnemyStats.GetComponent<EnemyStats>().StraferFiring;
+        shotDelay = StraferFiring[0];
+        repeatRate = StraferFiring[1];
+        shotSpeed = StraferFiring[2];
         InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
         Player = GameObject.FindWithTag("Player");
+
     }
 
     void Update()

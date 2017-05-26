@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Enemy1MovementAI : MonoBehaviour {
 
@@ -8,14 +9,20 @@ public class Enemy1MovementAI : MonoBehaviour {
     public float movementDelay;
     public float movementSpeed;
     private Rigidbody2D rb;
-   
+    public GameObject EnemyStats;
+
 
     void Start () {
-
+        EnemyStats = GameObject.Find("EnemyStats");
+        List<float> StraferMovement = EnemyStats.GetComponent<EnemyStats>().StraferMovement;
+        movementPause = StraferMovement[0];
+        movementDelay = StraferMovement[1];
+        movementSpeed = StraferMovement[2];
         InvokeRepeating("Move", movementDelay, movementPause);
         InvokeRepeating("rotatoPotato", 0, .05f);
         rb = GetComponent<Rigidbody2D>();
         Player = GameObject.FindWithTag("Player");
+
     }
 
     // somewhat random movement for enemy
