@@ -98,14 +98,14 @@ public class Attributes : MonoBehaviour {
 
     public void increasePointsMult()
     {
-        pointsMult += .5f;
+        pointsMult += 1f;
         StartCoroutine("EndPointsMult");
     }
 
     IEnumerator EndPointsMult()
     {
         yield return new WaitForSeconds(32.5f);
-        pointsMult -= 0.5f;
+        pointsMult -= 1f;
     }
 
     IEnumerator Damblage()
