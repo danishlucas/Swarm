@@ -5,6 +5,7 @@ public class SpiderBossLeg : MonoBehaviour {
 
     public GameObject bullet;
     public GameObject shotSpawn;
+    private GameObject Player;
     public float shotDelay;
     public float repeatRate;
     public float shotSpeed;
@@ -16,20 +17,21 @@ public class SpiderBossLeg : MonoBehaviour {
     // Use this for initialization
     void Start () {
         currentPair = 0;
+        Player = GameObject.FindWithTag("Player");
         InvokeRepeating("LaunchProjectile", shotDelay, repeatRate);
+        InvokeRepeating("rotatoPotato", 0, .05f);
     }
 
     void LaunchProjectile()
     {
-        if (doorEast)
-        {
             if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom && currentPair == legPair)
             {
-                float angle = Random.Range(0, 78539816);
-                angle /= 100000000;
+              
                 GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
+                float angle = Mathf.Atan2(Player.transform.position.y - transform.position.y,
+                                           Player.transform.position.x - transform.position.x);
                 Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
-                rb2.velocity = new Vector2(Mathf.Cos(angle + adjustment) * shotSpeed, Mathf.Sin(angle + adjustment) * shotSpeed);
+                rb2.velocity = new Vector2(Mathf.Cos(angle) * shotSpeed, Mathf.Sin(angle) * shotSpeed);
             }
             currentPair++;
             if (currentPair == 4)
@@ -37,22 +39,17 @@ public class SpiderBossLeg : MonoBehaviour {
                 currentPair = 0;
             }
         }
-        else
+        
+    
+
+    void rotatoPotato()
+    {
+        if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom)
         {
-            if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom && currentPair == legPair)
-            {
-                float angle = Random.Range(-370539816, -300539816);
-                angle /= 100000000;
-                GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
-                Rigidbody2D rb2 = instance.GetComponent<Rigidbody2D>(); // rb2 is for the bullets
-                rb2.velocity = new Vector2(Mathf.Cos(angle + adjustment) * shotSpeed, Mathf.Sin(angle + adjustment) * shotSpeed);
-            }
-            currentPair++;
-            if (currentPair == 4)
-            {
-                currentPair = 0;
-            }
+            transform.LookAt(Player.transform.position);
+            
+            transform.Rotate(new Vector3(0, -90, 90), Space.Self); 
         }
     }
-    
+
 }
