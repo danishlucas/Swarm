@@ -17,7 +17,6 @@ public class MyEventTrigger : EventTrigger {
             SceneManager.LoadScene("MenuScene");
         }
         else if (gameObject.name == "Reset") { 
-            Debug.Log("does it do?");
             PlayerPrefs.SetFloat("High Score", 0);
         }
         

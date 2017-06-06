@@ -8,6 +8,7 @@ public class Score : MonoBehaviour {
     public float score;
     public int floor;
     public Text countText;
+    bool done;
 	// Use this for initialization
 	void Start () {
         GameObject oldScoreObject = GameObject.Find("OldScore");
@@ -25,6 +26,7 @@ public class Score : MonoBehaviour {
         }
         countText = GameObject.FindWithTag("CountText").GetComponent<Text>();
         countText.text = score.ToString();
+        done = true;
 	}
 	
 	// Update is called once per frame
@@ -42,11 +44,16 @@ public class Score : MonoBehaviour {
         countText.text = score.ToString();
         if (scene.name == "DeathScene")
         {
-            if (PlayerPrefs.GetFloat("Temp Score") > PlayerPrefs.GetFloat("High Score"))
+            if (PlayerPrefs.GetFloat("Temp Score") > PlayerPrefs.GetFloat("High Score") && done)
             {
                 PlayerPrefs.SetFloat("High Score", PlayerPrefs.GetFloat("Temp Score"));
+                done = false;
             }
             GameObject.FindWithTag("HighScore").GetComponent<Text>().text = PlayerPrefs.GetFloat("High Score").ToString();
+        }
+        if (scene.name == "MenuScene")
+        {
+            done = true;
         }
 	}
 
