@@ -6,6 +6,7 @@ public class MazeGen : MonoBehaviour {
 
     public int xSize; // gotta be odd!
     public int ySize; // gotta be odd!
+    
     public byte[,] array;
     private bool bossRoomMade = false;
     public List<GameObject> StartingRooms = new List<GameObject>();
@@ -32,7 +33,13 @@ public class MazeGen : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        
+        setupMaze();
+        buildMaze();
+    }
 
+    public void setupMaze()
+    {
         //phase 1
         array = new byte[xSize + 1, ySize + 1];
         if (xSize % 2 == 0)
@@ -55,7 +62,7 @@ public class MazeGen : MonoBehaviour {
         List<int> listy = new List<int>();
         List<int> neighborList = getNeighbors(1, 1);
         neighborList.Add(-99);
-        while(neighborList[0] != -99)
+        while (neighborList[0] != -99)
         {
             listx.Add(neighborList[0]);
             neighborList.RemoveAt(0);
@@ -68,7 +75,8 @@ public class MazeGen : MonoBehaviour {
         while (listx.Count > 0)
         {
             int magicNumber = Random.Range(0, listx.Count);
-            if (isValid(listx[magicNumber], listy[magicNumber])) {
+            if (isValid(listx[magicNumber], listy[magicNumber]))
+            {
                 array[listx[magicNumber], listy[magicNumber]] = 0;
                 neighborList = getNeighbors(listx[magicNumber], listy[magicNumber]);
                 neighborList.Add(-99);
@@ -83,23 +91,9 @@ public class MazeGen : MonoBehaviour {
             listx.RemoveAt(magicNumber);
             listy.RemoveAt(magicNumber);
         }
-        /*
-        // just checkin
-        for (int i = 0; i < xSize; i++)
-        {
-            for (int j = 0; j < ySize; j++)
-            {
-                Debug.Log(i + " " + j + " " + array[i, j]);
-
-            }
-        }
-        */
-
-        buildMaze();
-
     }
 
-    private void buildMaze()
+    public void buildMaze()
     {
 
         // array[1,1] = 0;
@@ -267,10 +261,8 @@ public class MazeGen : MonoBehaviour {
             potBossLocs.RemoveAt(0);
             reps++;
         }
-
-
-
-
+        
+        transform.position = new Vector3(0, 0, 0);
     }
 
 

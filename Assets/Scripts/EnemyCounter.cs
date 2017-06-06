@@ -14,7 +14,7 @@ public class EnemyCounter : MonoBehaviour
 
     void Update()
     {
-        if (enemyCount == 0 & timesPlayed == 0)
+        if (enemyCount == 0 && timesPlayed == 0)
         {
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();

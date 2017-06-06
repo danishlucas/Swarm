@@ -2,8 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//used for the strafer
 public class EnemyFiringAI : MonoBehaviour {
 
+    
     private GameObject Player;
     public GameObject bullet;
     public GameObject shotSpawn;
@@ -53,7 +55,7 @@ public class EnemyFiringAI : MonoBehaviour {
         {
             if (!blocked)
             {
-                CircleCollider2D playerCollider = Player.GetComponent<CircleCollider2D>();
+                
                 GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
                 float angle = Mathf.Atan2(Player.transform.position.y - transform.position.y,
                                            Player.transform.position.x - transform.position.x);

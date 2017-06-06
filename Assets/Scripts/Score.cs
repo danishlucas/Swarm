@@ -6,10 +6,23 @@ using System.Collections;
 public class Score : MonoBehaviour {
 
     public float score;
+    public int floor;
     public Text countText;
 	// Use this for initialization
 	void Start () {
-        score = 0;
+        GameObject oldScoreObject = GameObject.Find("OldScore");
+        if (oldScoreObject == null)
+        {
+            floor = 0;
+            score = 0;
+        }
+        else
+        {
+            Score oldScore = oldScoreObject.GetComponent<Score>();
+            floor = oldScore.floor + 1;
+            score = oldScore.score;
+            Destroy(oldScoreObject);
+        }
         countText = GameObject.FindWithTag("CountText").GetComponent<Text>();
         countText.text = score.ToString();
 	}

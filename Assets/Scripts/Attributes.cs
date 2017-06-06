@@ -6,7 +6,7 @@ public class Attributes : MonoBehaviour {
 
     public int health;
     public int maxHealth;
-    GameObject Player;
+    GameObject Player2;
     public bool invulnerable;
     public float invulnerabilityTime;
     public float sizeChange;
@@ -17,20 +17,41 @@ public class Attributes : MonoBehaviour {
     public float minSpeed;
     public float pointsMult;
     public bool shielded;
+    public Score score;
+    
 
 
     // Use this for initialization
     void Start () {
-        Player = GameObject.Find("Player");
-        health = 6;
-        maxHealth = 6;
         invulnerable = false;
-        speedUpsGrabbed = 0;
-        theoreticalSpeed = 3;
-        actualSpeed = 3;
-        minSpeed = 2.5f;
-        pointsMult = 1;
-        shielded = false;
+        Player2 = GameObject.Find("PLAYER2");
+        if (Player2 == null)
+        {
+            health = 6;
+            maxHealth = 6;
+            speedUpsGrabbed = 0;
+            theoreticalSpeed = 3;
+            actualSpeed = 3;
+            minSpeed = 2.5f;
+            pointsMult = 1;
+            shielded = false;
+        }
+        else
+        {
+            transform.localScale = Player2.transform.localScale;
+            Attributes ogStats = Player2.GetComponent<Attributes>();
+            health = ogStats.health;
+            maxHealth = ogStats.maxHealth;
+            speedUpsGrabbed = ogStats.speedUpsGrabbed;
+            theoreticalSpeed = ogStats.theoreticalSpeed;
+            actualSpeed = ogStats.actualSpeed;
+            minSpeed = ogStats.minSpeed;
+            pointsMult = ogStats.pointsMult;
+            shielded = ogStats.shielded;
+            Destroy(Player2);
+
+
+        }
     }
 	
 	// Update is called once per frame

@@ -6,11 +6,27 @@ public class EnemyAttributes : MonoBehaviour {
     public float healthDropChance;
     public GameObject health;
     public GameObject Player;
-
+    private EnemyStats stats;
+    //use this now
 
 
     void Start()
     {
+        stats = GameObject.Find("EnemyStats").GetComponent<EnemyStats>();
+        if (this.GetComponent<EnemyFiringAI>() != null)
+        {
+            healthDropChance = stats.straferDrop;
+
+        }
+        else if (this.GetComponent<OmniTurretAI>() != null)
+        {
+            healthDropChance = stats.omniDrop;
+        }
+        else if (this.GetComponent<TankEnemyMovement>() != null)
+        {
+            healthDropChance = stats.tankDrop;
+        }
+
         Player = GameObject.FindWithTag("Player");
         room = gameObject.transform.root.gameObject;
     }
