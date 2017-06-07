@@ -1,0 +1,1403 @@
+fileFormatVersion: 2
+guid: 6a0733f3986343f45bb8c5656597b33e
+timeCreated: 1496251360
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NewBullets_0
+    21300002: NewBullets_1
+    21300004: NewBullets_2
+    21300006: NewBullets_3
+    21300008: NewBullets_4
+    21300010: NewBullets_5
+    21300012: NewBullets_6
+    21300014: NewBullets_7
+    21300016: NewBullets_8
+    21300018: NewBullets_9
+    21300020: NewBullets_10
+    21300022: NewBullets_11
+    21300024: NewBullets_12
+    21300026: NewBullets_13
+    21300028: NewBullets_14
+    21300030: NewBullets_15
+    21300032: NewBullets_16
+    21300034: NewBullets_17
+    21300036: NewBullets_18
+    21300038: NewBullets_19
+    21300040: NewBullets_20
+    21300042: NewBullets_21
+    21300044: NewBullets_22
+    21300046: NewBullets_23
+    21300048: NewBullets_24
+    21300050: NewBullets_25
+    21300052: NewBullets_26
+    21300054: NewBullets_27
+    21300056: NewBullets_28
+    21300058: NewBullets_29
+    21300060: NewBullets_30
+    21300062: NewBullets_31
+    21300064: NewBullets_32
+    21300066: NewBullets_33
+    21300068: NewBullets_34
+    21300070: NewBullets_35
+    21300072: NewBullets_36
+    21300074: NewBullets_37
+    21300076: NewBullets_38
+    21300078: NewBullets_39
+    21300080: NewBullets_40
+    21300082: NewBullets_41
+    21300084: NewBullets_42
+    21300086: NewBullets_43
+    21300088: NewBullets_44
+    21300090: NewBullets_45
+    21300092: NewBullets_46
+    21300094: NewBullets_47
+    21300096: NewBullets_48
+    21300098: NewBullets_49
+    21300100: NewBullets_50
+    21300102: NewBullets_51
+    21300104: NewBullets_52
+    21300106: NewBullets_53
+    21300108: NewBullets_54
+    21300110: NewBullets_55
+    21300112: NewBullets_56
+    21300114: NewBullets_57
+    21300116: NewBullets_58
+    21300118: NewBullets_59
+    21300120: NewBullets_60
+    21300122: NewBullets_61
+    21300124: NewBullets_62
+    21300126: NewBullets_63
+    21300128: NewBullets_64
+    21300130: NewBullets_65
+    21300132: NewBullets_66
+    21300134: NewBullets_67
+    21300136: NewBullets_68
+    21300138: NewBullets_69
+    21300140: NewBullets_70
+    21300142: NewBullets_71
+    21300144: NewBullets_72
+    21300146: NewBullets_73
+    21300148: NewBullets_74
+    21300150: NewBullets_75
+    21300152: NewBullets_76
+    21300154: NewBullets_77
+    21300156: NewBullets_78
+    21300158: NewBullets_79
+    21300160: NewBullets_80
+    21300162: NewBullets_81
+    21300164: NewBullets_82
+    21300166: NewBullets_83
+    21300168: NewBullets_84
+    21300170: NewBullets_85
+    21300172: NewBullets_86
+    21300174: NewBullets_87
+    21300176: NewBullets_88
+    21300178: NewBullets_89
+    21300180: NewBullets_90
+    21300182: NewBullets_91
+    21300184: NewBullets_92
+    21300186: NewBullets_93
+    21300188: NewBullets_94
+    21300190: NewBullets_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NewBullets_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 569
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 569
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 569
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 576
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 573
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 569
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 541
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 539
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 537
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_9
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 539
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 538
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 537
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 505
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 505
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 505
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 508
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_16
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 509
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_17
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 505
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 476
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 475
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 473
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_21
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 475
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 474
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_23
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 473
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_25
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_26
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_27
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_28
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 445
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_29
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 441
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 413
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_31
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 411
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_32
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 409
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_33
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 411
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_34
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 410
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_35
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 409
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_36
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 377
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_37
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 377
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_38
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 377
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_39
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 380
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_40
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 381
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_41
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 377
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_42
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 348
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_43
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 347
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_44
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 346
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_45
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 347
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_46
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 346
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_47
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 346
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 307
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_49
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 307
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_50
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 307
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_51
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 314
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_52
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 311
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_53
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 307
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_54
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 279
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_55
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 277
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_56
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 275
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_57
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 277
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_58
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 276
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_59
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 275
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_60
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 243
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_61
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 243
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_62
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 243
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_63
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 246
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_64
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 247
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_65
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 243
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_66
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 214
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_67
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 213
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_68
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 211
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_69
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 213
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_70
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 212
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_71
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 211
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_72
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 179
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_73
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 179
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_74
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 179
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_75
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 186
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_76
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 183
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_77
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 179
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_78
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 151
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_79
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 149
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_80
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 147
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_81
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 149
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_82
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 148
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_83
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 147
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_84
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 115
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_85
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 115
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_86
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 115
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_87
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 118
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_88
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 119
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_89
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 115
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_90
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 86
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_91
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 85
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_92
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 84
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_93
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 85
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_94
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 84
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewBullets_95
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 84
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
