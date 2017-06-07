@@ -13,11 +13,16 @@ public class EnemyStats : MonoBehaviour {
     public float tankDrop;
     public float omniDrop;
 
-    private int floor = GameObject.Find("ScoreObject").GetComponent<Score>().floor;
-    
-
 
     void Start () {
+        Invoke("Updateroni", 2.5f);
+	
+	}
+	
+	// Update is called once per frame
+	void Updateroni () {
+        int floor = GameObject.Find("ScoreObject").GetComponent<Score>().floor;
+        Debug.Log("Fix");
         //ShotDelay, RepeatRate, ShotSpeed
         StraferFiring[1] -= 0.05f * floor;
         StraferFiring[2] += 0.25f * floor;
@@ -25,11 +30,5 @@ public class EnemyStats : MonoBehaviour {
         straferDrop -= .02f * floor;
         tankDrop -= 0.02f * floor;
         omniDrop -= 0.02f * floor;
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
 }
