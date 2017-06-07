@@ -24,6 +24,10 @@ public class SpiderBossFiring : MonoBehaviour {
 
     void LaunchProjectile()
     {
+        if (Player == null)
+        {
+            Player = GameObject.FindWithTag("Player");
+        }
         if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom)
         {
             if (shotsFired < 3 + patternsCompleted * 4)

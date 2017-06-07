@@ -28,6 +28,10 @@ public class Enemy1MovementAI : MonoBehaviour {
     // somewhat random movement for enemy
     void Move() 
     {
+        if (Player == null)
+        {
+            Player = GameObject.FindWithTag("Player");
+        }
         if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom)
         {
             int rando = Random.Range(0, 15);

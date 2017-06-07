@@ -30,6 +30,10 @@ public class EnemyFiringAI : MonoBehaviour {
 
     void Update()
     {
+        if (Player == null)
+        {
+            Player = GameObject.FindWithTag("Player");
+        }
         /*
         RaycastHit2D hit = Physics2D.Linecast(transform.position, Player.transform.position);
 

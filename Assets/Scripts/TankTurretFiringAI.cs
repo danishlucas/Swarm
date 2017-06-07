@@ -28,6 +28,10 @@ public class TankTurretFiringAI: MonoBehaviour
 
     void rotatoPotato()
     {
+        if (Player == null)
+        {
+            Player = GameObject.FindWithTag("Player");
+        }
         if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom)
         {
             transform.LookAt(Player.transform.position);

@@ -5,7 +5,7 @@ public class SpiderBossLeg : MonoBehaviour {
 
     public GameObject bullet;
     public GameObject shotSpawn;
-    private GameObject Player;
+    public GameObject Player;
     public float shotDelay;
     public float repeatRate;
     public float shotSpeed;
@@ -24,7 +24,12 @@ public class SpiderBossLeg : MonoBehaviour {
 
     void LaunchProjectile()
     {
-            if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom && currentPair == legPair)
+        if (Player == null)
+        {
+            Debug.Log("Fixeroni?");
+            Player = GameObject.Find("PLAYER");
+        }
+        if (this.GetComponent<EnemyAttributes>().room.GetComponent<PlayerInRoom>().InRoom && currentPair == legPair)
             {
               
                 GameObject instance = Instantiate(bullet, shotSpawn.transform.position, shotSpawn.transform.rotation) as GameObject;
