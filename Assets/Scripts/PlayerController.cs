@@ -9,15 +9,15 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D myBody;
     public float moveForce = 3;
     public float dashForce = 50;
-    public int deltaTime1 = 0;
-    public int deltaTime2;
+    public float deltaTime1 = 0;
+    public float deltaTime2;
     public bool isDashing;
     public bool buttonAvailable = true;
     private Animator animation;
     public GameObject joystick;
     public GameObject button;
     public float fillAmount;
-    private Image cooldown;
+    public Image cooldown;
 
 
 
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         float xPos = joystick.GetComponent<RectTransform>().anchoredPosition.x;
@@ -55,28 +55,30 @@ public class PlayerController : MonoBehaviour
         {
             deltaTime1 += 1;
             animation.SetTrigger("Dash");
+            cooldown.fillAmount = 0;
 
 
         }
-        if (deltaTime1 >= 1 && deltaTime1 <= 20)
+        if (deltaTime1 >= 1 && deltaTime1 <= 1.25)
         {
-            deltaTime1++;
+            deltaTime1 += Time.fixedDeltaTime;
             isDashing = true;
             buttonAvailable = false;
-            cooldown.fillAmount += .04f;
-            cooldown.fillAmount = 0;
+            cooldown.fillAmount = (deltaTime1 - 1) / 1.5f;
+            
             
         }
-        else if (deltaTime1 > 20 && deltaTime1 < 50)
+        else if (deltaTime1 > 1.25 && deltaTime1 < 2)
         {
             isDashing = false;
             buttonAvailable = false;
-            deltaTime1++;
-            cooldown.fillAmount += .04f;
+            deltaTime1+= Time.fixedDeltaTime;
+            cooldown.fillAmount = (deltaTime1 - 1) / 1.5f;
         }
-        if (deltaTime1 == 50)
+        if (deltaTime1 >= 2)
         {
             deltaTime1 = 0;
+            cooldown.fillAmount = 1;
 
         }
         myBody.velocity = (moveVec * (isDashing ? dashForce : 1));

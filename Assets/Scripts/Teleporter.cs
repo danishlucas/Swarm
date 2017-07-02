@@ -18,7 +18,7 @@ public class Teleporter : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "PLAYER")
+        if (other.name == "PLAYER" || other.name == "PCPLAYER")
         {
             mainCamera.transform.position = new Vector3(0, 0, 10);
             //need to copy original player stats over to the new player

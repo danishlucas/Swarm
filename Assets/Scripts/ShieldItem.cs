@@ -12,7 +12,11 @@ public class ShieldItem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Player = GameObject.Find("PLAYER");
+        if (Player == null)
+            Player = GameObject.Find("PCPLAYER");
         stats = Player.GetComponent<Attributes>();
+        if (stats == null)
+            stats = Player.GetComponent<PCAttributes>();
         active = false;
         done = true;
         StartCoroutine("Activate");

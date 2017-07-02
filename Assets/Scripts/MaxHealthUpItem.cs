@@ -3,13 +3,18 @@ using System.Collections;
 
 public class MaxHealthUpItem : MonoBehaviour
 {
-
+    Attributes stats;
     GameObject Player;
     private bool active;
     void Start()
     {
         active = false;
-        Player = GameObject.Find("Player");
+        Player = GameObject.Find("PLAYER");
+        if (Player == null)
+            Player = GameObject.Find("PCPLAYER");
+        stats = Player.GetComponent<Attributes>();
+        if (stats == null)
+            stats = Player.GetComponent<PCAttributes>();
         StartCoroutine("Activate");
     }
 
@@ -30,7 +35,7 @@ public class MaxHealthUpItem : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            Attributes stats = other.GetComponent<Attributes>();
+            
             stats.maxHealth++;
             stats.heal();
             Debug.Log("Max health.... UP!");

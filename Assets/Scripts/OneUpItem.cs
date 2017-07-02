@@ -11,7 +11,11 @@ public class OneUpItem : MonoBehaviour {
     void Start()
     {
         Player = GameObject.Find("PLAYER");
+        if (Player == null)
+            Player = GameObject.Find("PCPLAYER");
         stats = Player.GetComponent<Attributes>();
+        if (stats == null)
+            stats = Player.GetComponent<PCAttributes>();
         active = false;
         StartCoroutine("Activate");
         done = 0;

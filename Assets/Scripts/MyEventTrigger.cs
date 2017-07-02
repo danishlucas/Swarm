@@ -10,7 +10,7 @@ public class MyEventTrigger : EventTrigger {
         if (gameObject.name == "Enter the Dungeon")
         {
             Debug.Log("Click");
-            SceneManager.LoadScene("Dane'sProceduralScene");
+            SceneManager.LoadScene(2);
         }
         else if (gameObject.name == "Continue?")
         {

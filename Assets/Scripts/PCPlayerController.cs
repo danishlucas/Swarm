@@ -27,14 +27,14 @@ public class PCPlayerController : PlayerController {
         animation = GetComponent<Animator>();
 
         myBody = this.GetComponent<Rigidbody2D>();
-        //cooldown = button.GetComponent<Image>();
+        cooldown = button.GetComponent<Image>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        transform.position += move * moveForce * Time.deltaTime;
+        transform.position += move * moveForce * Time.fixedDeltaTime;
         transform.up = myBody.velocity;
         //float xPos = joystick.GetComponent<RectTransform>().anchoredPosition.x;
         //float yPos = joystick.GetComponent<RectTransform>().anchoredPosition.y;
@@ -57,28 +57,29 @@ public class PCPlayerController : PlayerController {
         {
             deltaTime1 += 1;
             animation.SetTrigger("Dash");
+            cooldown.fillAmount = 0;
 
 
         }
-        if (deltaTime1 >= 1 && deltaTime1 <= 20)
+        if (deltaTime1 >= 1 && deltaTime1 <= 1.6)
         {
-            deltaTime1++;
+            deltaTime1 += Time.fixedDeltaTime;
             isDashing = true;
             buttonAvailable = false;
-            //cooldown.fillAmount += .04f;
-            //cooldown.fillAmount = 0;
+            cooldown.fillAmount = (deltaTime1 - 1) / 1.5f;
 
         }
-        else if (deltaTime1 > 20 && deltaTime1 < 50)
+        else if (deltaTime1 > 1.6 && deltaTime1 < 2.5)
         {
             isDashing = false;
             buttonAvailable = false;
-            deltaTime1++;
-            //cooldown.fillAmount += .04f;
+            deltaTime1 += Time.fixedDeltaTime;
+            cooldown.fillAmount = (deltaTime1 - 1) / 1.5f;
         }
-        if (deltaTime1 == 50)
+        if (deltaTime1 >= 2.5)
         {
             deltaTime1 = 0;
+            cooldown.fillAmount = 1;
 
         }
         myBody.velocity = (move * (isDashing ? dashForce : 1));

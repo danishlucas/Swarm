@@ -3,13 +3,19 @@ using System.Collections;
 
 public class SpeedUpItem : MonoBehaviour {
 
+    GameObject Player;
     private bool active;
     public Attributes attributes;
 
 
     void Start()
     {
-        
+        Player = GameObject.Find("PLAYER");
+        if (Player == null)
+            Player = GameObject.Find("PCPLAYER");
+        attributes = Player.GetComponent<Attributes>();
+        if (attributes == null)
+            attributes = Player.GetComponent<PCAttributes>();
         active = false;
         StartCoroutine("Activate");
 
@@ -32,7 +38,7 @@ public class SpeedUpItem : MonoBehaviour {
         if (other.tag == "Player")
         {
 
-            attributes = other.GetComponent<Attributes>();
+            
             attributes.speedUpsGrabbed++;
             attributes.theoreticalSpeed += .5f;
             Debug.Log("theoretical speed up!");

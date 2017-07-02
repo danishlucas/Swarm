@@ -12,7 +12,9 @@ public class HealthBar : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Player = GameObject.Find("PLAYER");
-	}
+        if (Player == null)
+            Player = GameObject.Find("PCPLAYER");
+    }
 	
 	// Update is called once per frame
 	void Update () {
