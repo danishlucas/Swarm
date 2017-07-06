@@ -21,7 +21,7 @@ public class PCAttributes : Attributes {
     // Use this for initialization
     void Start()
     {
-        Player = GameObject.Find("Player");
+        this.name = "PLAYER";
         Player2 = GameObject.Find("PLAYER2");
         if (Player2 == null)
         {
